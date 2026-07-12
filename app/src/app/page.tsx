@@ -254,7 +254,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="w-full flex absolute bottom-0 inset-x-0 z-1 pb-12 px-6 justify-center items-center content-center max-lg:pb-8">
-                <ul className="flex relative justify-center items-center flex-wrap gap-x-8 gap-y-4 [list-style-type:none] list-outside max-lg:gap-x-6 max-md:w-full max-md:max-w-70 max-md:grid max-md:grid-cols-5 max-md:gap-2 [&_li]:transform-[none] [&_li_div]:h-9 [&_img]:h-9 [&_li]:w-auto [&_li_div]:w-auto [&_img]:w-auto max-md:[&_li]:w-full max-md:[&_li_div]:w-full max-md:[&_img]:w-full" role="group">
+                <ul className="flex relative justify-center items-center flex-wrap gap-x-3 gap-y-3 [list-style-type:none] list-outside max-lg:gap-x-2.5 max-md:w-full max-md:max-w-70 max-md:grid max-md:grid-cols-5 max-md:gap-2 [&_li]:transform-[none] [&_li_div]:h-6 [&_img]:h-6 max-md:[&_li_div]:h-5 max-md:[&_img]:h-5 [&_li]:w-auto [&_li_div]:w-auto [&_img]:w-auto max-md:[&_li]:w-full max-md:[&_li_div]:w-full max-md:[&_img]:w-full" role="group">
                   {Logo4_data.map((d, i) => <Logo4 key={i} d={d} styles={Logo4_styles[i]} />)}
                 </ul>
               </div>
@@ -604,7 +604,7 @@ export default function Page() {
             </section>
             <section className="w-full flex relative justify-center items-center content-center shrink-0 gap-2.5 overflow-clip max-lg:flex-col" id="explore">
               <div className="contents min-w-0">
-                <div className="h-[63.7rem] block absolute inset-x-0 z-0 shrink-0 transform-[matrix(-1,0,0,-1,0,0)] origin-[640px_509.578px] max-md:h-[102.1rem] max-md:origin-[187.5px_816.82px] md:max-lg:h-[1583.7px] md:max-lg:origin-[384px_791.859px] 2xl:transform-[none] 2xl:origin-[initial]">
+                <div className="h-full block absolute inset-0 z-0 shrink-0">
                   <div className="h-full block relative gap-2.5 overflow-clip bg-cover bg-center bg-no-repeat max-lg:[mask-image:initial]" data-ditto-id="style-div-2" style={{ backgroundImage: "url(/assets/cloned/images/skills-automations/image.png)" }}>
                     {Logo6_data.map((d, i) => <Logo6 key={i} d={d} styles={Logo6_styles[i]} />)}
                   </div>
