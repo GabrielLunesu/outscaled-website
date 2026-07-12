@@ -8,8 +8,6 @@ import ProductGridSection2 from "./sections/product-grid-section2";
 import CardGridSection3 from "./sections/card-grid-section3";
 import Tile, { type TileData } from "./components/tile";
 import Icon2 from "./svgs/svg-icon2";
-import Icon3 from "./svgs/svg-icon3";
-import Icon4 from "./svgs/svg-icon4";
 import Logo4, { type Logo4Data } from "./components/logo4";
 import Icon8 from "./svgs/svg-icon8";
 import Logo5, { type Logo5Data } from "./components/logo5";
@@ -26,96 +24,110 @@ import Tile4, { type Tile4Data } from "./components/tile4";
 import { Tile_styles, Logo4_styles, Logo5_styles, MediaCard_styles, Logo6_styles, Logo9_styles, MediaTile4_styles, Logo10_styles, Tile4_styles } from "./_styles";
 
 const Tile_data: TileData[] = [
-    { href: "/#use-cases", description: "Use Cases" },
-    { href: "/#comparison", description: "Why Erie" },
-    { href: "/#pricing", description: "Pricing" },
-    { href: "/#faq", description: "FAQ" },
-    { href: "/tutorials#hero", description: "Tutorials" }
+  { href: "/#use-cases", description: "Use Cases" },
+  { href: "/#comparison", description: "Why Erie" },
+  { href: "/#pricing", description: "Pricing" },
+  { href: "/#faq", description: "FAQ" },
+  { href: "/tutorials#hero", description: "Tutorials" }
 ];
 const Logo4_data: Logo4Data[] = [
-    { ariaposinset: "1", imgSrc: "/assets/cloned/images/fc7de95a2765.png", width: "345" },
-    { ariaposinset: "2", imgSrc: "/assets/cloned/images/aa6f980af627.png", width: "414" },
-    { ariaposinset: "3", imgSrc: "/assets/cloned/images/670f58fa8c5a.png", width: "555", sizes: "(min-width: 1440px) 219.2593px, (min-width: 810px) and (max-width: 1439.98px) 219.2593px, (max-width: 809.98px) 219.2593px", srcSet: "/assets/cloned/images/0f36254def1e.png 512w, /assets/cloned/images/670f58fa8c5a.png 555w" },
-    { ariaposinset: "4", imgSrc: "/assets/cloned/images/6882c9114888.png", width: "438" },
-    { ariaposinset: "5", imgSrc: "/assets/cloned/images/492a9aee7001.png", width: "528", sizes: "(min-width: 1440px) 208.5926px, (min-width: 810px) and (max-width: 1439.98px) 208.5926px, (max-width: 809.98px) 208.5926px", srcSet: "/assets/cloned/images/4602dc1d2094.png 512w, /assets/cloned/images/492a9aee7001.png 528w" }
+  { ariaposinset: "1", imgSrc: "/assets/cloned/images/fc7de95a2765.png", width: "345" },
+  { ariaposinset: "2", imgSrc: "/assets/cloned/images/aa6f980af627.png", width: "414" },
+  { ariaposinset: "3", imgSrc: "/assets/cloned/images/670f58fa8c5a.png", width: "555", sizes: "(min-width: 1440px) 219.2593px, (min-width: 810px) and (max-width: 1439.98px) 219.2593px, (max-width: 809.98px) 219.2593px", srcSet: "/assets/cloned/images/0f36254def1e.png 512w, /assets/cloned/images/670f58fa8c5a.png 555w" },
+  { ariaposinset: "4", imgSrc: "/assets/cloned/images/6882c9114888.png", width: "438" },
+  { ariaposinset: "5", imgSrc: "/assets/cloned/images/492a9aee7001.png", width: "528", sizes: "(min-width: 1440px) 208.5926px, (min-width: 810px) and (max-width: 1439.98px) 208.5926px, (max-width: 809.98px) 208.5926px", srcSet: "/assets/cloned/images/4602dc1d2094.png 512w, /assets/cloned/images/492a9aee7001.png 528w" }
 ];
 const Logo5_data: Logo5Data[] = [
-    { height: "2600", sizes: "calc(calc((calc(max((min(100vw, 1000px) - 100px) / 2, 50px) * 2 + 20px) - 120px) * 0.3752) * 0.9994)", imgSrc: "/assets/cloned/images/15968b85b930.png", srcSet: "/assets/cloned/images/1d5280f5eff1.png 512w, /assets/cloned/images/906077447ead.png 1024w, /assets/cloned/images/74dcca46f9d9.png 2048w, /assets/cloned/images/15968b85b930.png 2600w", width: "2600" },
-    { height: "4491", sizes: "calc(calc((calc(max((min(100vw, 1000px) - 100px) / 2, 50px) * 2 + 20px) - 120px) * 0.669) * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w", width: "8000" },
-    { height: "4491", sizes: "calc(calc((calc(max((min(100vw, 1000px) - 100px) / 2, 50px) * 2 + 20px) - 120px) * 0.5835) * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w", width: "8000" }
+  { height: "2600", sizes: "calc(calc((calc(max((min(100vw, 1000px) - 100px) / 2, 50px) * 2 + 20px) - 120px) * 0.3752) * 0.9994)", imgSrc: "/assets/cloned/images/15968b85b930.png", srcSet: "/assets/cloned/images/1d5280f5eff1.png 512w, /assets/cloned/images/906077447ead.png 1024w, /assets/cloned/images/74dcca46f9d9.png 2048w, /assets/cloned/images/15968b85b930.png 2600w", width: "2600" },
+  { height: "4491", sizes: "calc(calc((calc(max((min(100vw, 1000px) - 100px) / 2, 50px) * 2 + 20px) - 120px) * 0.669) * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w", width: "8000" },
+  { height: "4491", sizes: "calc(calc((calc(max((min(100vw, 1000px) - 100px) / 2, 50px) * 2 + 20px) - 120px) * 0.5835) * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w", width: "8000" }
 ];
 const MediaCard_data: MediaCardData[] = [
-    { icon: <>
-                <use href="#748090325" />
-                </>, description: "Performance", title: "Sub-3s Generation", description2: "Our distillation pipeline produces stunning 1024px images in under 3 seconds. Iterate fast, ship faster." },
-    { icon: <>
-                <use href="#336289499" />
-                </>, description: "AI Training", title: "Style DNA™", description2: "Upload 3–5 reference images to train a personal style fingerprint in under 5 mins. Consistent aesthetics, every time." },
-    { icon: <>
-                <use href="#19207876" />
-                </>, description: "Exclusive", title: "Image → Video", description2: "Animate any image with motion prompts. Cinematic camera moves, physics-aware dynamics, up to 60 seconds of 4K output." },
-    { icon: <>
-                <use href="#2497355416" />
-                </>, description: "Editing", title: "Inpainting Canvas", description2: "Surgically edit any region with natural language. Replace, extend, or refine — non-destructive, infinite history." }
+  {
+    icon: <>
+      <use href="#748090325" />
+    </>, description: "Performance", title: "Sub-3s Generation", description2: "Our distillation pipeline produces stunning 1024px images in under 3 seconds. Iterate fast, ship faster."
+  },
+  {
+    icon: <>
+      <use href="#336289499" />
+    </>, description: "AI Training", title: "Style DNA™", description2: "Upload 3–5 reference images to train a personal style fingerprint in under 5 mins. Consistent aesthetics, every time."
+  },
+  {
+    icon: <>
+      <use href="#19207876" />
+    </>, description: "Exclusive", title: "Image → Video", description2: "Animate any image with motion prompts. Cinematic camera moves, physics-aware dynamics, up to 60 seconds of 4K output."
+  },
+  {
+    icon: <>
+      <use href="#2497355416" />
+    </>, description: "Editing", title: "Inpainting Canvas", description2: "Surgically edit any region with natural language. Replace, extend, or refine — non-destructive, infinite history."
+  }
 ];
 const Logo6_data: Logo6Data[] = [
-    { kind: "image", height: "4491", sizes: "calc(calc(100vw + 363px) * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w" },
-    { height: "4491", sizes: "calc(1000px * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w" },
-    { kind: "image", height: "4517", sizes: "calc(500px * 0.9997)", imgSrc: "/assets/cloned/images/88ab5ebd250d.png", srcSet: "/assets/cloned/images/5ab24d237039.png 512w, /assets/cloned/images/3ccbbcfdad7c.png 1024w, /assets/cloned/images/9cc7f33269f2.png 2048w, /assets/cloned/images/c8fb4ce5e102.png 4096w, /assets/cloned/images/88ab5ebd250d.png 8000w" },
-    { height: "4517", sizes: "calc(1000px * 0.9997)", imgSrc: "/assets/cloned/images/88ab5ebd250d.png", srcSet: "/assets/cloned/images/5ab24d237039.png 512w, /assets/cloned/images/3ccbbcfdad7c.png 1024w, /assets/cloned/images/9cc7f33269f2.png 2048w, /assets/cloned/images/c8fb4ce5e102.png 4096w, /assets/cloned/images/88ab5ebd250d.png 8000w" }
+  { kind: "image", height: "4491", sizes: "calc(calc(100vw + 363px) * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w" },
+  { height: "4491", sizes: "calc(1000px * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w" },
+  { kind: "image", height: "4517", sizes: "calc(500px * 0.9997)", imgSrc: "/assets/cloned/images/88ab5ebd250d.png", srcSet: "/assets/cloned/images/5ab24d237039.png 512w, /assets/cloned/images/3ccbbcfdad7c.png 1024w, /assets/cloned/images/9cc7f33269f2.png 2048w, /assets/cloned/images/c8fb4ce5e102.png 4096w, /assets/cloned/images/88ab5ebd250d.png 8000w" },
+  { height: "4517", sizes: "calc(1000px * 0.9997)", imgSrc: "/assets/cloned/images/88ab5ebd250d.png", srcSet: "/assets/cloned/images/5ab24d237039.png 512w, /assets/cloned/images/3ccbbcfdad7c.png 1024w, /assets/cloned/images/9cc7f33269f2.png 2048w, /assets/cloned/images/c8fb4ce5e102.png 4096w, /assets/cloned/images/88ab5ebd250d.png 8000w" }
 ];
 const Logo9_data: Logo9Data[] = [
-    { height: "4517", sizes: "calc(1000px * 0.9997)", imgSrc: "/assets/cloned/images/88ab5ebd250d.png", srcSet: "/assets/cloned/images/5ab24d237039.png 512w, /assets/cloned/images/3ccbbcfdad7c.png 1024w, /assets/cloned/images/9cc7f33269f2.png 2048w, /assets/cloned/images/c8fb4ce5e102.png 4096w, /assets/cloned/images/88ab5ebd250d.png 8000w" },
-    { height: "4491", sizes: "calc(1000px * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w" },
-    { height: "4491", sizes: "calc(1000px * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w" },
-    { height: "4517", sizes: "calc(1000px * 0.9997)", imgSrc: "/assets/cloned/images/88ab5ebd250d.png", srcSet: "/assets/cloned/images/5ab24d237039.png 512w, /assets/cloned/images/3ccbbcfdad7c.png 1024w, /assets/cloned/images/9cc7f33269f2.png 2048w, /assets/cloned/images/c8fb4ce5e102.png 4096w, /assets/cloned/images/88ab5ebd250d.png 8000w" }
+  { height: "4517", sizes: "calc(1000px * 0.9997)", imgSrc: "/assets/cloned/images/88ab5ebd250d.png", srcSet: "/assets/cloned/images/5ab24d237039.png 512w, /assets/cloned/images/3ccbbcfdad7c.png 1024w, /assets/cloned/images/9cc7f33269f2.png 2048w, /assets/cloned/images/c8fb4ce5e102.png 4096w, /assets/cloned/images/88ab5ebd250d.png 8000w" },
+  { height: "4491", sizes: "calc(1000px * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w" },
+  { height: "4491", sizes: "calc(1000px * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w" },
+  { height: "4517", sizes: "calc(1000px * 0.9997)", imgSrc: "/assets/cloned/images/88ab5ebd250d.png", srcSet: "/assets/cloned/images/5ab24d237039.png 512w, /assets/cloned/images/3ccbbcfdad7c.png 1024w, /assets/cloned/images/9cc7f33269f2.png 2048w, /assets/cloned/images/c8fb4ce5e102.png 4096w, /assets/cloned/images/88ab5ebd250d.png 8000w" }
 ];
 const MediaTile4_data: MediaTile4Data[] = [
-    { href: "/tutorials/your-first-image-in-5-minutes-description", height: "2464", imgSrc: "/assets/cloned/images/e478929f98bc.png", srcSet: "/assets/cloned/images/0546315834c2.png 771w, /assets/cloned/images/304493b11e3d.png 1542w, /assets/cloned/images/e478929f98bc.png 1856w", width: "1856", description: "4:58", description2: "Your First Image in 5 Minutes", description3: "Open ERIE for the first time and generate your first stunning image from scratch. Learn the basic interface, how to write your first prompt, and how to download your result." },
-    { href: "/tutorials/how-to-write-better-prompts", height: "816", imgSrc: "/assets/cloned/images/cbc4b22cbe45.png", srcSet: "/assets/cloned/images/0b57b3be2ea2.png 512w, /assets/cloned/images/cc5326df970a.png 1024w, /assets/cloned/images/cbc4b22cbe45.png 1456w", width: "1456", description: "9:45", description2: "How to Write Better Prompts", description3: "The difference between a good image and a great one is almost always the prompt. Learn the anatomy of a strong prompt like style, subject, lighting, mood, and camera and see the results in real time." },
-    { href: "/tutorials/how-to-train-your-personal-style", height: "1632", imgSrc: "/assets/cloned/images/45a662907289.png", srcSet: "/assets/cloned/images/41a70a9e739c.png 512w, /assets/cloned/images/8dca4d8ac36a.png 1024w, /assets/cloned/images/5814463e56e8.png 2048w, /assets/cloned/images/45a662907289.png 2912w", width: "2912", description: "11:30", description2: "How to Train Your Personal Style", description3: "Upload 3 to 5 reference images and train a style fingerprint that makes every generation feel unmistakably yours. Learn how to pick the right references and apply your style across all five models." },
-    { href: "/tutorials/animating-a-still-image-into-video", height: "816", imgSrc: "/assets/cloned/images/8683f78164c5.png", srcSet: "/assets/cloned/images/046d12d3b82b.png 512w, /assets/cloned/images/29b95ab271fe.png 1024w, /assets/cloned/images/8683f78164c5.png 1456w", width: "1456", description: "12:15", description2: "Animating a Still Image into Video", description3: "Take any image, yours or ERIE-generated and turn it into a cinematic video clip using motion prompts. Learn camera movements, physics settings, duration controls, and export formats." },
-    { href: "/tutorials/how-to-edit-any-part-of-an-image", height: "816", imgSrc: "/assets/cloned/images/04012cdce64c.png", srcSet: "/assets/cloned/images/62968f9b4c3c.png 512w, /assets/cloned/images/bee3368163ef.png 1024w, /assets/cloned/images/04012cdce64c.png 1456w", width: "1456", description: "8:40", description2: "How to Edit Any Part of an Image", description3: "Use ERIE's inpainting canvas to surgically edit specific regions of any image using natural language. Replace backgrounds, fix details, swap objects, and extend edges non-destructively." },
-    { href: "/tutorials/learn-negative-prompting", height: "816", imgSrc: "/assets/cloned/images/32c3bcc8ddcc.png", srcSet: "/assets/cloned/images/b17d225c51c8.png 512w, /assets/cloned/images/27a90e421f35.png 1024w, /assets/cloned/images/32c3bcc8ddcc.png 1456w", width: "1456", description: "6:18", description2: "Learn Negative Prompting", description3: "One of the most underused tools in AI generation. Learn how negative prompts work, when to use them, and the exact phrases that remove blur, distortion, bad lighting, and unwanted elements." }
+  { href: "/tutorials/your-first-image-in-5-minutes-description", height: "2464", imgSrc: "/assets/cloned/images/e478929f98bc.png", srcSet: "/assets/cloned/images/0546315834c2.png 771w, /assets/cloned/images/304493b11e3d.png 1542w, /assets/cloned/images/e478929f98bc.png 1856w", width: "1856", description: "4:58", description2: "Your First Image in 5 Minutes", description3: "Open ERIE for the first time and generate your first stunning image from scratch. Learn the basic interface, how to write your first prompt, and how to download your result." },
+  { href: "/tutorials/how-to-write-better-prompts", height: "816", imgSrc: "/assets/cloned/images/cbc4b22cbe45.png", srcSet: "/assets/cloned/images/0b57b3be2ea2.png 512w, /assets/cloned/images/cc5326df970a.png 1024w, /assets/cloned/images/cbc4b22cbe45.png 1456w", width: "1456", description: "9:45", description2: "How to Write Better Prompts", description3: "The difference between a good image and a great one is almost always the prompt. Learn the anatomy of a strong prompt like style, subject, lighting, mood, and camera and see the results in real time." },
+  { href: "/tutorials/how-to-train-your-personal-style", height: "1632", imgSrc: "/assets/cloned/images/45a662907289.png", srcSet: "/assets/cloned/images/41a70a9e739c.png 512w, /assets/cloned/images/8dca4d8ac36a.png 1024w, /assets/cloned/images/5814463e56e8.png 2048w, /assets/cloned/images/45a662907289.png 2912w", width: "2912", description: "11:30", description2: "How to Train Your Personal Style", description3: "Upload 3 to 5 reference images and train a style fingerprint that makes every generation feel unmistakably yours. Learn how to pick the right references and apply your style across all five models." },
+  { href: "/tutorials/animating-a-still-image-into-video", height: "816", imgSrc: "/assets/cloned/images/8683f78164c5.png", srcSet: "/assets/cloned/images/046d12d3b82b.png 512w, /assets/cloned/images/29b95ab271fe.png 1024w, /assets/cloned/images/8683f78164c5.png 1456w", width: "1456", description: "12:15", description2: "Animating a Still Image into Video", description3: "Take any image, yours or ERIE-generated and turn it into a cinematic video clip using motion prompts. Learn camera movements, physics settings, duration controls, and export formats." },
+  { href: "/tutorials/how-to-edit-any-part-of-an-image", height: "816", imgSrc: "/assets/cloned/images/04012cdce64c.png", srcSet: "/assets/cloned/images/62968f9b4c3c.png 512w, /assets/cloned/images/bee3368163ef.png 1024w, /assets/cloned/images/04012cdce64c.png 1456w", width: "1456", description: "8:40", description2: "How to Edit Any Part of an Image", description3: "Use ERIE's inpainting canvas to surgically edit specific regions of any image using natural language. Replace backgrounds, fix details, swap objects, and extend edges non-destructively." },
+  { href: "/tutorials/learn-negative-prompting", height: "816", imgSrc: "/assets/cloned/images/32c3bcc8ddcc.png", srcSet: "/assets/cloned/images/b17d225c51c8.png 512w, /assets/cloned/images/27a90e421f35.png 1024w, /assets/cloned/images/32c3bcc8ddcc.png 1456w", width: "1456", description: "6:18", description2: "Learn Negative Prompting", description3: "One of the most underused tools in AI generation. Learn how negative prompts work, when to use them, and the exact phrases that remove blur, distortion, bad lighting, and unwanted elements." }
 ];
 const Logo10_data: Logo10Data[] = [
-    { name: "Image 1", name2: "Image 1", kind: "image", height: "2464", imgSrc: "/assets/cloned/images/5010e6e25306.png", srcSet: "/assets/cloned/images/5a606878e56d.png 771w, /assets/cloned/images/66a25826c2da.png 1542w, /assets/cloned/images/5010e6e25306.png 1856w", width: "1856" },
-    { name: "Image 2", name2: "Image 2", kind: "image", height: "1200", imgSrc: "/assets/cloned/images/271b956d730d.png", srcSet: "/assets/cloned/images/d267f8646704.png 846w, /assets/cloned/images/271b956d730d.png 992w", width: "992" },
-    { name: "Image 3", name2: "Image 3", kind: "image", height: "900", imgSrc: "/assets/cloned/images/405d8f0448c9.png", srcSet: "/assets/cloned/images/02dd3e9442f6.png 512w, /assets/cloned/images/38fc33030829.png 1024w, /assets/cloned/images/405d8f0448c9.png 1200w", width: "1200" },
-    { name: "Image 4", name2: "Image 4", kind: "image", height: "2912", imgSrc: "/assets/cloned/images/f7c3040dadd0.png", srcSet: "/assets/cloned/images/4ea8ed19360c.png 573w, /assets/cloned/images/14a7da653cbd.png 1147w, /assets/cloned/images/f7c3040dadd0.png 1632w", width: "1632" },
-    { name: "Image 5", name2: "Image 5", kind: "image", height: "1536", imgSrc: "/assets/cloned/images/5dccbbe2ca68.png", srcSet: "/assets/cloned/images/2fab3216cbf0.png 512w, /assets/cloned/images/5dccbbe2ca68.png 768w", width: "768" },
-    { name: "Image 6", name2: "Image 6", kind: "image", height: "1200", imgSrc: "/assets/cloned/images/9d00f7b47f61.png", srcSet: "/assets/cloned/images/d50b9512c4f7.png 770w, /assets/cloned/images/9d00f7b47f61.png 903w", width: "903" },
-    { name: "Image 1", name2: "Image 1", height: "2464", imgSrc: "/assets/cloned/images/5010e6e25306.png", srcSet: "/assets/cloned/images/5a606878e56d.png 771w, /assets/cloned/images/66a25826c2da.png 1542w, /assets/cloned/images/5010e6e25306.png 1856w", width: "1856" },
-    { name: "Image 2", name2: "Image 2", height: "1200", imgSrc: "/assets/cloned/images/271b956d730d.png", srcSet: "/assets/cloned/images/d267f8646704.png 846w, /assets/cloned/images/271b956d730d.png 992w", width: "992" }
+  { name: "Image 1", name2: "Image 1", kind: "image", height: "2464", imgSrc: "/assets/cloned/images/5010e6e25306.png", srcSet: "/assets/cloned/images/5a606878e56d.png 771w, /assets/cloned/images/66a25826c2da.png 1542w, /assets/cloned/images/5010e6e25306.png 1856w", width: "1856" },
+  { name: "Image 2", name2: "Image 2", kind: "image", height: "1200", imgSrc: "/assets/cloned/images/271b956d730d.png", srcSet: "/assets/cloned/images/d267f8646704.png 846w, /assets/cloned/images/271b956d730d.png 992w", width: "992" },
+  { name: "Image 3", name2: "Image 3", kind: "image", height: "900", imgSrc: "/assets/cloned/images/405d8f0448c9.png", srcSet: "/assets/cloned/images/02dd3e9442f6.png 512w, /assets/cloned/images/38fc33030829.png 1024w, /assets/cloned/images/405d8f0448c9.png 1200w", width: "1200" },
+  { name: "Image 4", name2: "Image 4", kind: "image", height: "2912", imgSrc: "/assets/cloned/images/f7c3040dadd0.png", srcSet: "/assets/cloned/images/4ea8ed19360c.png 573w, /assets/cloned/images/14a7da653cbd.png 1147w, /assets/cloned/images/f7c3040dadd0.png 1632w", width: "1632" },
+  { name: "Image 5", name2: "Image 5", kind: "image", height: "1536", imgSrc: "/assets/cloned/images/5dccbbe2ca68.png", srcSet: "/assets/cloned/images/2fab3216cbf0.png 512w, /assets/cloned/images/5dccbbe2ca68.png 768w", width: "768" },
+  { name: "Image 6", name2: "Image 6", kind: "image", height: "1200", imgSrc: "/assets/cloned/images/9d00f7b47f61.png", srcSet: "/assets/cloned/images/d50b9512c4f7.png 770w, /assets/cloned/images/9d00f7b47f61.png 903w", width: "903" },
+  { name: "Image 1", name2: "Image 1", height: "2464", imgSrc: "/assets/cloned/images/5010e6e25306.png", srcSet: "/assets/cloned/images/5a606878e56d.png 771w, /assets/cloned/images/66a25826c2da.png 1542w, /assets/cloned/images/5010e6e25306.png 1856w", width: "1856" },
+  { name: "Image 2", name2: "Image 2", height: "1200", imgSrc: "/assets/cloned/images/271b956d730d.png", srcSet: "/assets/cloned/images/d267f8646704.png 846w, /assets/cloned/images/271b956d730d.png 992w", width: "992" }
 ];
 const Logo11_data: Logo11Data[] = [
-    { href: "https://x.com/home", icon: <>
-            <use href="#1688045918" />
-            </> },
-    { href: "https://www.instagram.com/", icon: <>
-            <use href="#942143898" />
-            </> },
-    { href: "https://www.youtube.com/", icon: <>
-            <use href="#3761207643" />
-            </> }
+  {
+    href: "https://x.com/home", icon: <>
+      <use href="#1688045918" />
+    </>
+  },
+  {
+    href: "https://www.instagram.com/", icon: <>
+      <use href="#942143898" />
+    </>
+  },
+  {
+    href: "https://www.youtube.com/", icon: <>
+      <use href="#3761207643" />
+    </>
+  }
 ];
 const Tile3_data: Tile3Data[] = [
-    { href: "/tutorials/your-first-image-in-5-minutes-description#hero", description: "Your First Image in 5 Minutes" },
-    { href: "/tutorials/how-to-write-better-prompts#hero", description: "How to Write Better Prompts" },
-    { href: "/tutorials/how-to-train-your-personal-style#hero", description: "How to Train Your Personal Style" },
-    { href: "/tutorials/animating-a-still-image-into-video#hero", description: "Animating a Still Image into Video" },
-    { href: "/tutorials/how-to-edit-any-part-of-an-image#hero", description: "How to Edit Any Part of an Image" },
-    { href: "/tutorials/learn-negative-prompting#hero", description: "Learn Negative Prompting" }
+  { href: "/tutorials/your-first-image-in-5-minutes-description#hero", description: "Your First Image in 5 Minutes" },
+  { href: "/tutorials/how-to-write-better-prompts#hero", description: "How to Write Better Prompts" },
+  { href: "/tutorials/how-to-train-your-personal-style#hero", description: "How to Train Your Personal Style" },
+  { href: "/tutorials/animating-a-still-image-into-video#hero", description: "Animating a Still Image into Video" },
+  { href: "/tutorials/how-to-edit-any-part-of-an-image#hero", description: "How to Edit Any Part of an Image" },
+  { href: "/tutorials/learn-negative-prompting#hero", description: "Learn Negative Prompting" }
 ];
 const Tile4_data: Tile4Data[] = [
-    { href: "/#hero", description: "Home" },
-    { href: "/#features", description: "Features" },
-    { href: "/#use-cases", description: "Use cases" },
-    { href: "/#comparison", description: "Comparison" },
-    { href: "/#pricing", description: "Pricing" },
-    { href: "/#faq", description: "FAQ" },
-    { href: "/explore#hero", description: "Explore" },
-    { href: "/tutorials#hero", description: "Tutorials" }
+  { href: "/#hero", description: "Home" },
+  { href: "/#features", description: "Features" },
+  { href: "/#use-cases", description: "Use cases" },
+  { href: "/#comparison", description: "Comparison" },
+  { href: "/#pricing", description: "Pricing" },
+  { href: "/#faq", description: "FAQ" },
+  { href: "/explore#hero", description: "Explore" },
+  { href: "/tutorials#hero", description: "Tutorials" }
 ];
 
 export default function Page() {
@@ -129,9 +141,9 @@ export default function Page() {
                 <nav className="w-[95.5%] flex relative max-w-300 justify-center items-center content-center grow shrink-0 basis-0 gap-2.5 max-md:w-[84%] md:max-lg:w-[92.5%]" data-component="nav">
                   <div className="w-296.5 flex relative z-1 justify-start items-center content-center grow shrink-0 basis-0 gap-3 overflow-clip max-md:w-[17.5625rem] md:max-lg:w-168.5 2xl:w-[24.8125rem] 2xl:z-[initial] 2xl:grow-[initial] 2xl:basis-[initial]">
                     <div className="block relative shrink-0">
-                      <a className="h-14 flex relative justify-start items-center content-center gap-1 text-primary cursor-pointer" data-component="link" href="/">
-                        <img className="h-14 w-auto block" data-logo="dark" src="/assets/cloned/images/outscaled/logo.svg" alt="Outscaled" width="966" height="966" />
-                        <img className="h-14 w-auto hidden" data-logo="white" src="/assets/cloned/images/outscaled/logo-white.svg" alt="Outscaled" width="966" height="966" />
+                      <a className="h-18 flex relative justify-start items-center content-center gap-1 text-primary cursor-pointer" data-component="link" href="/">
+                        <img className="h-18 w-auto block" data-logo="dark" src="/assets/cloned/images/outscaled/logo.svg" alt="Outscaled" width="966" height="966" />
+                        <img className="h-18 w-auto hidden" data-logo="white" src="/assets/cloned/images/outscaled/logo-white.svg" alt="Outscaled" width="966" height="966" />
                       </a>
                     </div>
                   </div>
@@ -172,59 +184,118 @@ export default function Page() {
           <div className="h-[min-content] min-h-screen contents relative min-w-0 flex-col justify-start items-center content-center overflow-clip bg-color-001">
             <section className="w-full h-[1482.3px] flex relative justify-center items-center content-center shrink-0 gap-2.5 overflow-clip max-md:h-[81.4875rem] max-lg:flex-col md:max-lg:h-[86.1875rem] 2xl:h-270" data-ditto-id="style-hero" id="hero">
               <div className="contents min-w-0">
-                <div className="h-screen block absolute top-0 inset-x-0 z-0 shrink-0 p-4">
-                  <div className="h-full relative rounded-[40px] overflow-clip bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/assets/cloned/images/hero/hero.png)" }}>
-                    <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-white" />
-                  </div>
+                <div className="h-screen block absolute top-0 inset-x-0 z-0 shrink-0">
+                  <div className="h-full relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/assets/cloned/images/hero/hero.png)" }} />
                 </div>
               </div>
-              <div className="w-[78%] h-full flex relative z-0 max-w-250 pt-20 pb-25 px-10 flex-col justify-center items-center content-center grow shrink-0 basis-0 gap-10 max-md:w-full max-lg:max-w-150 max-lg:px-5 max-lg:grow-[initial] max-lg:basis-[initial] 2xl:w-[62.5%] 2xl:max-w-300 2xl:pt-8 2xl:pb-10 2xl:px-5 2xl:justify-between 2xl:[flex-direction:initial] 2xl:gap-[initial]">
-                <div className="w-150 flex relative max-w-150 flex-col justify-center items-center content-center shrink-0 gap-10 max-md:w-[20.9375rem] max-lg:max-w-125 max-lg:gap-8 md:max-lg:w-125 2xl:flex-1">
-                  <div className="flex relative flex-col justify-start items-center content-center shrink-0 gap-7.5 max-lg:justify-center max-lg:gap-6 2xl:items-start 2xl:content-start">
-                    <div className="w-[167.5px] block relative shrink-0 max-lg:w-[10.1rem]">
-                      <div className="flex relative py-1.5 px-2.5 rounded-[60px] justify-center items-center content-center gap-1.5 overflow-clip bg-surface [backdrop-filter:blur(8px)]">
-                        <Icon3 />
-                        <div className="w-[123.5px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-lg:w-[7.35rem]">
-                          <p className="block text-color-001 [font-family:Switzer,_'Switzer_Placeholder',_sans-serif] text-[0.8125rem] font-medium leading-[1rem] tracking-[1.08px] uppercase [font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11'] max-lg:leading-[0.9375rem] max-lg:tracking-[1.02px]" dir="auto">
-                            Video Model v7
-                          </p>
-                        </div>
+              <div className="w-[78%] h-full flex relative z-0 max-w-250 pt-10 pb-44 px-10 flex-col justify-center items-center content-center grow shrink-0 basis-0 gap-10 max-md:w-full max-lg:max-w-150 max-lg:px-5 max-lg:grow-[initial] max-lg:basis-[initial] 2xl:w-full 2xl:max-w-300 2xl:pt-0 2xl:pb-72 2xl:px-5">
+                <div className="w-150 flex relative max-w-150 flex-col justify-center items-center content-center shrink-0 gap-10 max-md:w-[20.9375rem] max-lg:max-w-125 max-lg:gap-8 md:max-lg:w-125 2xl:w-full 2xl:max-w-none">
+                  <div className="flex relative flex-col justify-start items-center content-center shrink-0 gap-7.5 max-lg:justify-center max-lg:gap-6">
+                    <div className="block relative shrink-0">
+                      <div className="flex relative py-2 px-4 rounded-[100px] justify-center items-center content-center gap-2.5 overflow-clip bg-surface [backdrop-filter:blur(8px)]">
+                        <span className="w-1.5 h-1.5 block relative shrink-0 rounded-full bg-color-001" />
+                        <p className="block text-color-001 [font-family:var(--font-inter-tight),sans-serif] text-[0.875rem] font-medium leading-4 tracking-[0.2px] whitespace-pre text-nowrap" dir="auto">
+                          Outscale your competition
+                        </p>
+                        <span className="block relative shrink-0 text-color-001 text-sm leading-4" aria-hidden="true">
+                          ›
+                        </span>
                       </div>
                     </div>
                     <div className="contents min-w-0">
                       <div className="flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                        <h1 className="block text-color-001 [font-family:Switzer,_'Switzer_Placeholder',_sans-serif] text-[5.1875rem] leading-[5.1875rem] tracking-[-3.33px] text-center [font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11'] max-lg:text-[3.375rem] max-lg:leading-[3.375rem] max-lg:tracking-[-2.18px] 2xl:text-left" data-component="heading" dir="auto">
+                        <h1 className="block text-color-001 [font-family:var(--font-headland-one),serif] text-[5.1875rem] leading-[5.5rem] tracking-[-2px] text-center [font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11'] max-lg:text-[3.375rem] max-lg:leading-[3.75rem] max-lg:tracking-[-1px] 2xl:whitespace-nowrap 2xl:text-[3.75rem] 2xl:leading-[4.25rem] 2xl:tracking-[-1px]" data-component="heading" dir="auto">
                           <span className="inline whitespace-nowrap text-nowrap">
                             <span className="inline-block">
-                              C
-                            </span>
-                            <span className="inline-block">
-                              r
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              a
+                              S
                             </span>
                             <span className="inline-block">
                               t
                             </span>
                             <span className="inline-block">
-                              e
+                              o
+                            </span>
+                            <span className="inline-block">
+                              p
                             </span>
                           </span>
                           {" "}
                           <span className="inline whitespace-nowrap text-nowrap">
                             <span className="inline-block">
-                              a
+                              d
+                            </span>
+                            <span className="inline-block">
+                              o
+                            </span>
+                            <span className="inline-block">
+                              i
                             </span>
                             <span className="inline-block">
                               n
                             </span>
                             <span className="inline-block">
-                              y
+                              g
                             </span>
+                          </span>
+                          {" "}
+                          <span className="inline whitespace-nowrap text-nowrap">
+                            <span className="inline-block">
+                              j
+                            </span>
+                            <span className="inline-block">
+                              o
+                            </span>
+                            <span className="inline-block">
+                              b
+                            </span>
+                            <span className="inline-block">
+                              s
+                            </span>
+                            <span className="inline-block">
+                              .
+                            </span>
+                          </span>
+                          {" "}
+                          <span className="inline whitespace-nowrap text-nowrap">
+                            <span className="inline-block">
+                              S
+                            </span>
+                            <span className="inline-block">
+                              t
+                            </span>
+                            <span className="inline-block">
+                              a
+                            </span>
+                            <span className="inline-block">
+                              r
+                            </span>
+                            <span className="inline-block">
+                              t
+                            </span>
+                          </span>
+                          {" "}
+                          <span className="inline whitespace-nowrap text-nowrap">
+                            <span className="inline-block">
+                              g
+                            </span>
+                            <span className="inline-block">
+                              i
+                            </span>
+                            <span className="inline-block">
+                              v
+                            </span>
+                            <span className="inline-block">
+                              i
+                            </span>
+                            <span className="inline-block">
+                              n
+                            </span>
+                            <span className="inline-block">
+                              g
+                            </span>
+                          </span>
+                          {" "}
+                          <span className="inline whitespace-nowrap text-nowrap">
                             <span className="inline-block">
                               t
                             </span>
@@ -232,61 +303,10 @@ export default function Page() {
                               h
                             </span>
                             <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                            <span className="inline-block">
-                              g
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap text-nowrap">
-                            <span className="inline-block">
-                              y
-                            </span>
-                            <span className="inline-block">
-                              o
-                            </span>
-                            <span className="inline-block">
-                              u
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap text-nowrap">
-                            <span className="inline-block">
-                              c
-                            </span>
-                            <span className="inline-block">
-                              a
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap text-nowrap">
-                            <span className="inline-block">
-                              i
+                              e
                             </span>
                             <span className="inline-block">
                               m
-                            </span>
-                            <span className="inline-block">
-                              a
-                            </span>
-                            <span className="inline-block">
-                              g
-                            </span>
-                            <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                            <span className="inline-block">
-                              e
                             </span>
                             <span className="inline-block">
                               .
@@ -299,489 +319,23 @@ export default function Page() {
                     </div>
                     <div className="contents min-w-0">
                       <div className="flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                        <h6 className="block text-color-001 [font-family:Switzer,_'Switzer_Placeholder',_sans-serif] text-[1.1875rem] font-medium leading-[1.5625rem] tracking-[-0.58px] text-center text-balance [font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11'] max-lg:text-sm max-lg:leading-[1.1875rem] max-lg:tracking-[-0.43px] max-lg:[text-wrap:initial] 2xl:text-left 2xl:[text-wrap:initial]" data-component="heading" dir="auto">
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              T
-                            </span>
-                            <span className="inline-block">
-                              h
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              m
-                            </span>
-                            <span className="inline-block">
-                              o
-                            </span>
-                            <span className="inline-block">
-                              s
-                            </span>
-                            <span className="inline-block">
-                              t
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              p
-                            </span>
-                            <span className="inline-block">
-                              o
-                            </span>
-                            <span className="inline-block">
-                              w
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              r
-                            </span>
-                            <span className="inline-block">
-                              f
-                            </span>
-                            <span className="inline-block">
-                              u
-                            </span>
-                            <span className="inline-block">
-                              l
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              A
-                            </span>
-                            <span className="inline-block">
-                              I
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              m
-                            </span>
-                            <span className="inline-block">
-                              a
-                            </span>
-                            <span className="inline-block">
-                              g
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              a
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                            <span className="inline-block">
-                              d
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              v
-                            </span>
-                            <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              d
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              o
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              g
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              r
-                            </span>
-                            <span className="inline-block">
-                              a
-                            </span>
-                            <span className="inline-block">
-                              t
-                            </span>
-                            <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              o
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                            <span className="inline-block">
-                              g
-                            </span>
-                            <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              .
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              T
-                            </span>
-                            <span className="inline-block">
-                              u
-                            </span>
-                            <span className="inline-block">
-                              r
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              w
-                            </span>
-                            <span className="inline-block">
-                              o
-                            </span>
-                            <span className="inline-block">
-                              r
-                            </span>
-                            <span className="inline-block">
-                              d
-                            </span>
-                            <span className="inline-block">
-                              s
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              o
-                            </span>
-                            <span className="inline-block">
-                              r
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              s
-                            </span>
-                            <span className="inline-block">
-                              k
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              t
-                            </span>
-                            <span className="inline-block">
-                              c
-                            </span>
-                            <span className="inline-block">
-                              h
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              s
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                            <span className="inline-block">
-                              t
-                            </span>
-                            <span className="inline-block">
-                              o
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline">
-                            <span className="inline-block">
-                              p
-                            </span>
-                            <span className="inline-block">
-                              h
-                            </span>
-                            <span className="inline-block">
-                              o
-                            </span>
-                            <span className="inline-block">
-                              t
-                            </span>
-                            <span className="inline-block">
-                              o
-                            </span>
-                            <span className="inline-block">
-                              r
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              a
-                            </span>
-                            <span className="inline-block">
-                              l
-                            </span>
-                            <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              s
-                            </span>
-                            <span className="inline-block">
-                              t
-                            </span>
-                            <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              c
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              v
-                            </span>
-                            <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              s
-                            </span>
-                            <span className="inline-block">
-                              u
-                            </span>
-                            <span className="inline-block">
-                              a
-                            </span>
-                            <span className="inline-block">
-                              l
-                            </span>
-                            <span className="inline-block">
-                              s
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              s
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              c
-                            </span>
-                            <span className="inline-block">
-                              o
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                            <span className="inline-block">
-                              d
-                            </span>
-                            <span className="inline-block">
-                              s
-                            </span>
-                            <span className="inline-block">
-                              .
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              N
-                            </span>
-                            <span className="inline-block">
-                              o
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              d
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              s
-                            </span>
-                            <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              g
-                            </span>
-                            <span className="inline-block">
-                              n
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              s
-                            </span>
-                            <span className="inline-block">
-                              k
-                            </span>
-                            <span className="inline-block">
-                              i
-                            </span>
-                            <span className="inline-block">
-                              l
-                            </span>
-                            <span className="inline-block">
-                              l
-                            </span>
-                            <span className="inline-block">
-                              s
-                            </span>
-                          </span>
-                          {" "}
-                          <span className="inline whitespace-nowrap [text-wrap:nowrap_balance] max-lg:text-nowrap 2xl:text-nowrap">
-                            <span className="inline-block">
-                              n
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              d
-                            </span>
-                            <span className="inline-block">
-                              e
-                            </span>
-                            <span className="inline-block">
-                              d
-                            </span>
-                            <span className="inline-block">
-                              .
-                            </span>
-                          </span>
+                        <h6 className="block max-w-[36rem] text-color-001 [font-family:var(--font-inter-tight),sans-serif] text-[1.1875rem] font-medium leading-[1.5625rem] tracking-[-0.58px] text-center text-balance [font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11'] max-lg:text-sm max-lg:leading-[1.1875rem] max-lg:tracking-[-0.43px] max-lg:[text-wrap:initial] 2xl:[text-wrap:initial]" data-component="heading" dir="auto">
+                          Connect your store and the tools you already use, then create AI employees for any job, from product listers to creative strategists. They actively learn everything about your brand, so you can scale your AI fleet with confidence.
                         </h6>
                       </div>
                     </div>
                   </div>
-                  <div className="w-full flex relative flex-col justify-center items-center content-center shrink-0 gap-7.5 max-lg:justify-start max-lg:gap-5 2xl:justify-start 2xl:[flex-direction:initial]">
+                  <div className="w-full flex relative flex-col justify-center items-center content-center shrink-0 gap-7.5 max-lg:justify-start max-lg:gap-5 2xl:justify-center 2xl:[flex-direction:initial]">
                     <div className="block relative shrink-0">
                       <div className="contents">
-                        <a className="flex relative py-3 pr-3 pl-5 rounded-[18px] justify-center items-center content-center gap-6 overflow-clip text-primary bg-background shadow-[var(--clr-0)_0.671842px_0.503881px_0.839802px_-0.375px_inset,var(--clr-0)_1.59238px_1.19429px_1.99048px_-0.75px_inset,var(--clr-0)_2.90467px_2.1785px_3.63084px_-1.125px_inset,var(--clr-0)_4.82901px_3.62176px_6.03627px_-1.5px_inset,var(--clr-0)_7.79846px_5.84885px_9.74808px_-1.875px_inset,var(--clr-0)_12.7653px_9.57398px_15.9566px_-2.25px_inset,var(--clr-1)_21.981px_16.4857px_27.4762px_-2.625px_inset,var(--clr-2)_40px_30px_50px_-3px_inset,var(--clr-3)_-0.391815px_-0.78363px_0.876125px_-0.535714px_inset,var(--clr-4)_-0.959824px_-1.91965px_2.14623px_-1.07143px_inset,var(--clr-4)_-1.81873px_-3.63745px_4.0668px_-1.60714px_inset,var(--clr-4)_-3.17502px_-6.35004px_7.09957px_-2.14286px_inset,var(--clr-5)_-5.52594px_-11.0519px_12.3564px_-2.67857px_inset,var(--clr-6)_-10.1214px_-20.2428px_22.6322px_-3.21429px_inset,var(--clr-7)_-20px_-40px_44.7214px_-3.75px_inset] [backdrop-filter:blur(5px)] 2xl:cursor-pointer" data-component="link" href="https://www.framer.com/@blurrhaus/?tab=templates" rel="noopener">
-                          <div className="w-[5.575rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-lg:w-[5.325rem]">
-                            <p className="block text-foreground [font-family:Geist,_'Geist_Placeholder',_sans-serif] text-sm font-medium leading-[1.25rem] tracking-[-0.29px] [font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11'] max-lg:leading-[1.1875rem] max-lg:tracking-[-0.28px]" dir="auto">
-                              Start creating
-                            </p>
-                          </div>
-                          <div className="w-[5.575rem] h-5 flex absolute top-[3.8rem] left-5 z-1 opacity-0 min-w-0 flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                            <p className="block text-foreground [font-family:Geist,_'Geist_Placeholder',_sans-serif] text-sm font-medium leading-[1.25rem] tracking-[-0.29px] [font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11'] max-lg:leading-[1.1875rem] max-lg:tracking-[-0.28px]" dir="auto">
-                              Start creating
-                            </p>
-                          </div>
-                          <div className="w-9.5 h-9.5 flex relative p-2 rounded-[14px] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip bg-accent">
-                            <div className="w-6 block relative shrink-0 aspect-square bg-color-001" style={{ maskImage: "url(\"data:image/svg+xml,<svg display=\\\"block\\\" role=\\\"presentation\\\" viewBox=\\\"0 0 40 40\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"><path d=\\\"M 19.44 0 L 16.56 0 L 16.56 14.523 L 6.291 4.254 L 4.253 6.29 L 14.524 16.56 L 0 16.56 L 0 19.44 L 14.524 19.44 L 4.253 29.71 L 6.291 31.746 L 16.56 21.477 L 16.56 36 L 19.44 36 L 19.44 21.477 L 29.709 31.746 L 31.747 29.71 L 21.476 19.44 L 36 19.44 L 36 16.56 L 21.476 16.56 L 31.747 6.29 L 29.709 4.254 L 19.44 14.523 Z\\\" fill=\\\"var(--cxq9lu, var(--clr-8))\\\" height=\\\"36px\\\" id=\\\"o6qB3j_YV\\\" transform=\\\"translate(2 2)\\\" width=\\\"36px\\\"/></svg>\"), none" }} />
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div className="block relative shrink-0">
-                      <div className="contents">
-                        <a className="flex relative pt-3 pb-2 justify-center items-center content-center gap-1 overflow-clip text-primary 2xl:cursor-pointer" data-component="link" href="/#use-cases">
-                          <div className="basis-full shrink-0 flex relative pb-0.5 justify-center items-center content-center overflow-hidden 2xl:gap-1 after:content-[''] after:block after:absolute after:inset-0 after:h-6">
-                            <div className="w-[5.6125rem] flex relative flex-col justify-center items-center content-center shrink-0 gap-0.5 max-lg:w-[83.5px] 2xl:w-[5.825rem]">
-                              <div className="w-[5.6125rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-lg:w-[83.5px] 2xl:w-[5.825rem]">
-                                <p className="block text-color-001 [font-family:Switzer,_'Switzer_Placeholder',_sans-serif] text-sm leading-[1.125rem] [font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11'] max-lg:text-[0.8125rem] max-lg:leading-[1.0625rem] 2xl:[font-family:Geist,_'Geist_Placeholder',_sans-serif] 2xl:font-medium 2xl:leading-[1.25rem] 2xl:tracking-[-0.29px]" dir="auto">
-                                  See use cases
-                                </p>
-                              </div>
-                              <div className="w-[5.825rem] h-5 flex absolute -bottom-5.5 left-0 z-1 min-w-0 flex-col justify-start shrink-0 whitespace-pre text-nowrap max-lg:w-[5.5625rem] max-lg:h-[19.3px]">
-                                <p className="block text-color-001 [font-family:Geist,_'Geist_Placeholder',_sans-serif] text-sm font-medium leading-[1.25rem] tracking-[-0.29px] [font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11'] max-lg:leading-[1.1875rem] max-lg:tracking-[-0.28px]" dir="auto">
-                                  See use cases
-                                </p>
-                              </div>
-                            </div>
-                            <div className="flex relative py-1 pl-1 justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                              <Icon4 />
-                            </div>
-                          </div>
+                        <a className="inline-flex relative py-3.5 px-7 rounded-[100px] justify-center items-center content-center overflow-clip bg-color-001 cursor-pointer" data-component="link" href="#">
+                          <p className="block text-foreground [font-family:var(--font-inter-tight),sans-serif] text-[0.9375rem] font-medium leading-5 whitespace-pre text-nowrap" dir="auto">
+                            Talk to us
+                          </p>
                         </a>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="contents min-w-0">
-                  <img className="w-230 h-180 block relative shrink-0 order-[1] object-contain max-md:w-[20.9375rem] max-md:h-[35.525rem] md:max-lg:w-140 md:max-lg:h-[44.8rem] 2xl:w-[24rem] 2xl:h-[44rem] 2xl:order-[initial]" alt="" src="/assets/cloned/images/hero/hero-design.png" width="1080" height="1350" />
                 </div>
               </div>
             </section>
@@ -3230,7 +2784,7 @@ export default function Page() {
       </div>
       {" "}
       <NavScrollState />
-      <DittoMotion spec={{"waapi":[{"anchor":"motion-ul","keyframes":[{"offset":null,"easing":"linear","composite":"auto","transform":"translateX(0px)","computedOffset":0},{"offset":null,"easing":"linear","composite":"auto","transform":"translateX(-2380px)","computedOffset":1}],"duration":39666.666666666664,"delay":0,"easing":"linear","iterations":-1,"direction":"normal","fill":"auto"},{"anchor":"motion-ul-2","keyframes":[{"offset":null,"easing":"linear","composite":"auto","transform":"translateX(0px)","computedOffset":0},{"offset":null,"easing":"linear","composite":"auto","transform":"translateX(2380px)","computedOffset":1}],"duration":59500,"delay":0,"easing":"linear","iterations":-1,"direction":"normal","fill":"auto"},{"anchor":"motion-ul-3","keyframes":[{"offset":null,"easing":"linear","composite":"auto","transform":"translateX(0px)","computedOffset":0},{"offset":null,"easing":"linear","composite":"auto","transform":"translateX(-3024px)","computedOffset":1}],"duration":46523.07692307692,"delay":0,"easing":"linear","iterations":-1,"direction":"normal","fill":"auto"},{"anchor":"motion-4","keyframes":[{"offset":null,"easing":"linear","composite":"auto","opacity":"1","computedOffset":0},{"offset":null,"easing":"linear","composite":"auto","opacity":"0","computedOffset":1}],"duration":800,"delay":0,"easing":"linear(0 0%, 0.0054 1.2658227848101267%, 0.0203 2.5316455696202533%, 0.0428 3.79746835443038%, 0.0714 5.063291139240507%, 0.1046 6.329113924050633%, 0.1414 7.594936708860759%, 0.1808 8.860759493670885%, 0.2218 10.126582278481012%, 0.2637 11.392405063291138%, 0.306 12.658227848101264%, 0.3481 13.92405063291139%, 0.3896 15.189873417721516%, 0.4303 16.455696202531644%, 0.4697 17.72151898734177%, 0.5078 18.987341772151897%, 0.5443 20.253164556962023%, 0.5792 21.51898734177215%, 0.6124 22.784810126582276%, 0.6438 24.050632911392402%, 0.6734 25.316455696202528%, 0.7012 26.582278481012654%, 0.7273 27.84810126582278%, 0.7516 29.113924050632907%, 0.7743 30.379746835443033%, 0.7953 31.64556962025316%, 0.8148 32.91139240506329%, 0.8328 34.177215189873415%, 0.8494 35.44303797468354%, 0.8647 36.70886075949367%, 0.8786 37.974683544303794%, 0.8914 39.24050632911392%, 0.9031 40.506329113924046%, 0.9138 41.77215189873417%, 0.9235 43.0379746835443%, 0.9322 44.303797468354425%, 0.9402 45.56962025316455%, 0.9474 46.83544303797468%, 0.9538 48.101265822784804%, 0.9597 49.36708860759493%, 0.9649 50.632911392405056%, 0.9695 51.89873417721518%, 0.9737 53.16455696202531%, 0.9774 54.430379746835435%, 0.9807 55.69620253164556%, 0.9836 56.96202531645569%, 0.9862 58.22784810126581%, 0.9885 59.49367088607594%, 0.9905 60.759493670886066%, 0.9922 62.02531645569619%, 0.9937 63.29113924050632%, 0.995 64.55696202531645%, 0.9962 65.82278481012658%, 0.9971 67.0886075949367%, 0.998 68.35443037974683%, 0.9987 69.62025316455696%, 0.9993 70.88607594936708%, 0.9998 72.15189873417721%, 1.0002 73.41772151898734%, 1.0005 74.68354430379746%, 1.0008 75.94936708860759%, 1.001 77.21518987341771%, 1.0012 78.48101265822784%, 1.0013 79.74683544303797%, 1.0014 81.01265822784809%, 1.0015 82.27848101265822%, 1.0015 83.54430379746834%, 1.0015 84.81012658227847%, 1.0015 86.0759493670886%, 1.0015 87.34177215189872%, 1.0015 88.60759493670885%, 1.0014 89.87341772151898%, 1.0014 91.1392405063291%, 1.0013 92.40506329113923%, 1.0013 93.67088607594935%, 1.0012 94.93670886075948%, 1.0011 96.20253164556961%, 1.0011 97.46835443037973%, 1.001 98.73417721518987%, 1 100%)","iterations":1,"direction":"normal","fill":"both"},{"anchor":"motion-5","keyframes":[{"offset":null,"easing":"linear","composite":"auto","opacity":"0","computedOffset":0},{"offset":null,"easing":"linear","composite":"auto","opacity":"1","computedOffset":1}],"duration":800,"delay":0,"easing":"linear(0 0%, 0.0054 1.2658227848101267%, 0.0203 2.5316455696202533%, 0.0428 3.79746835443038%, 0.0714 5.063291139240507%, 0.1046 6.329113924050633%, 0.1414 7.594936708860759%, 0.1808 8.860759493670885%, 0.2218 10.126582278481012%, 0.2637 11.392405063291138%, 0.306 12.658227848101264%, 0.3481 13.92405063291139%, 0.3896 15.189873417721516%, 0.4303 16.455696202531644%, 0.4697 17.72151898734177%, 0.5078 18.987341772151897%, 0.5443 20.253164556962023%, 0.5792 21.51898734177215%, 0.6124 22.784810126582276%, 0.6438 24.050632911392402%, 0.6734 25.316455696202528%, 0.7012 26.582278481012654%, 0.7273 27.84810126582278%, 0.7516 29.113924050632907%, 0.7743 30.379746835443033%, 0.7953 31.64556962025316%, 0.8148 32.91139240506329%, 0.8328 34.177215189873415%, 0.8494 35.44303797468354%, 0.8647 36.70886075949367%, 0.8786 37.974683544303794%, 0.8914 39.24050632911392%, 0.9031 40.506329113924046%, 0.9138 41.77215189873417%, 0.9235 43.0379746835443%, 0.9322 44.303797468354425%, 0.9402 45.56962025316455%, 0.9474 46.83544303797468%, 0.9538 48.101265822784804%, 0.9597 49.36708860759493%, 0.9649 50.632911392405056%, 0.9695 51.89873417721518%, 0.9737 53.16455696202531%, 0.9774 54.430379746835435%, 0.9807 55.69620253164556%, 0.9836 56.96202531645569%, 0.9862 58.22784810126581%, 0.9885 59.49367088607594%, 0.9905 60.759493670886066%, 0.9922 62.02531645569619%, 0.9937 63.29113924050632%, 0.995 64.55696202531645%, 0.9962 65.82278481012658%, 0.9971 67.0886075949367%, 0.998 68.35443037974683%, 0.9987 69.62025316455696%, 0.9993 70.88607594936708%, 0.9998 72.15189873417721%, 1.0002 73.41772151898734%, 1.0005 74.68354430379746%, 1.0008 75.94936708860759%, 1.001 77.21518987341771%, 1.0012 78.48101265822784%, 1.0013 79.74683544303797%, 1.0014 81.01265822784809%, 1.0015 82.27848101265822%, 1.0015 83.54430379746834%, 1.0015 84.81012658227847%, 1.0015 86.0759493670886%, 1.0015 87.34177215189872%, 1.0015 88.60759493670885%, 1.0014 89.87341772151898%, 1.0014 91.1392405063291%, 1.0013 92.40506329113923%, 1.0013 93.67088607594935%, 1.0012 94.93670886075948%, 1.0011 96.20253164556961%, 1.0011 97.46835443037973%, 1.001 98.73417721518987%, 1 100%)","iterations":1,"direction":"normal","fill":"both"},{"anchor":"motion-6","keyframes":[{"offset":null,"easing":"linear","composite":"auto","opacity":"1","computedOffset":0},{"offset":null,"easing":"linear","composite":"auto","opacity":"0.5","computedOffset":1}],"duration":800,"delay":0,"easing":"linear(0 0%, 0.0054 1.2658227848101267%, 0.0203 2.5316455696202533%, 0.0428 3.79746835443038%, 0.0714 5.063291139240507%, 0.1046 6.329113924050633%, 0.1414 7.594936708860759%, 0.1808 8.860759493670885%, 0.2218 10.126582278481012%, 0.2637 11.392405063291138%, 0.306 12.658227848101264%, 0.3481 13.92405063291139%, 0.3896 15.189873417721516%, 0.4303 16.455696202531644%, 0.4697 17.72151898734177%, 0.5078 18.987341772151897%, 0.5443 20.253164556962023%, 0.5792 21.51898734177215%, 0.6124 22.784810126582276%, 0.6438 24.050632911392402%, 0.6734 25.316455696202528%, 0.7012 26.582278481012654%, 0.7273 27.84810126582278%, 0.7516 29.113924050632907%, 0.7743 30.379746835443033%, 0.7953 31.64556962025316%, 0.8148 32.91139240506329%, 0.8328 34.177215189873415%, 0.8494 35.44303797468354%, 0.8647 36.70886075949367%, 0.8786 37.974683544303794%, 0.8914 39.24050632911392%, 0.9031 40.506329113924046%, 0.9138 41.77215189873417%, 0.9235 43.0379746835443%, 0.9322 44.303797468354425%, 0.9402 45.56962025316455%, 0.9474 46.83544303797468%, 0.9538 48.101265822784804%, 0.9597 49.36708860759493%, 0.9649 50.632911392405056%, 0.9695 51.89873417721518%, 0.9737 53.16455696202531%, 0.9774 54.430379746835435%, 0.9807 55.69620253164556%, 0.9836 56.96202531645569%, 0.9862 58.22784810126581%, 0.9885 59.49367088607594%, 0.9905 60.759493670886066%, 0.9922 62.02531645569619%, 0.9937 63.29113924050632%, 0.995 64.55696202531645%, 0.9962 65.82278481012658%, 0.9971 67.0886075949367%, 0.998 68.35443037974683%, 0.9987 69.62025316455696%, 0.9993 70.88607594936708%, 0.9998 72.15189873417721%, 1.0002 73.41772151898734%, 1.0005 74.68354430379746%, 1.0008 75.94936708860759%, 1.001 77.21518987341771%, 1.0012 78.48101265822784%, 1.0013 79.74683544303797%, 1.0014 81.01265822784809%, 1.0015 82.27848101265822%, 1.0015 83.54430379746834%, 1.0015 84.81012658227847%, 1.0015 86.0759493670886%, 1.0015 87.34177215189872%, 1.0015 88.60759493670885%, 1.0014 89.87341772151898%, 1.0014 91.1392405063291%, 1.0013 92.40506329113923%, 1.0013 93.67088607594935%, 1.0012 94.93670886075948%, 1.0011 96.20253164556961%, 1.0011 97.46835443037973%, 1.001 98.73417721518987%, 1 100%)","iterations":1,"direction":"normal","fill":"both"},{"anchor":"motion-7","keyframes":[{"offset":null,"easing":"linear","composite":"auto","opacity":"0.5","computedOffset":0},{"offset":null,"easing":"linear","composite":"auto","opacity":"1","computedOffset":1}],"duration":800,"delay":0,"easing":"linear(0 0%, 0.0054 1.2658227848101267%, 0.0203 2.5316455696202533%, 0.0428 3.79746835443038%, 0.0714 5.063291139240507%, 0.1046 6.329113924050633%, 0.1414 7.594936708860759%, 0.1808 8.860759493670885%, 0.2218 10.126582278481012%, 0.2637 11.392405063291138%, 0.306 12.658227848101264%, 0.3481 13.92405063291139%, 0.3896 15.189873417721516%, 0.4303 16.455696202531644%, 0.4697 17.72151898734177%, 0.5078 18.987341772151897%, 0.5443 20.253164556962023%, 0.5792 21.51898734177215%, 0.6124 22.784810126582276%, 0.6438 24.050632911392402%, 0.6734 25.316455696202528%, 0.7012 26.582278481012654%, 0.7273 27.84810126582278%, 0.7516 29.113924050632907%, 0.7743 30.379746835443033%, 0.7953 31.64556962025316%, 0.8148 32.91139240506329%, 0.8328 34.177215189873415%, 0.8494 35.44303797468354%, 0.8647 36.70886075949367%, 0.8786 37.974683544303794%, 0.8914 39.24050632911392%, 0.9031 40.506329113924046%, 0.9138 41.77215189873417%, 0.9235 43.0379746835443%, 0.9322 44.303797468354425%, 0.9402 45.56962025316455%, 0.9474 46.83544303797468%, 0.9538 48.101265822784804%, 0.9597 49.36708860759493%, 0.9649 50.632911392405056%, 0.9695 51.89873417721518%, 0.9737 53.16455696202531%, 0.9774 54.430379746835435%, 0.9807 55.69620253164556%, 0.9836 56.96202531645569%, 0.9862 58.22784810126581%, 0.9885 59.49367088607594%, 0.9905 60.759493670886066%, 0.9922 62.02531645569619%, 0.9937 63.29113924050632%, 0.995 64.55696202531645%, 0.9962 65.82278481012658%, 0.9971 67.0886075949367%, 0.998 68.35443037974683%, 0.9987 69.62025316455696%, 0.9993 70.88607594936708%, 0.9998 72.15189873417721%, 1.0002 73.41772151898734%, 1.0005 74.68354430379746%, 1.0008 75.94936708860759%, 1.001 77.21518987341771%, 1.0012 78.48101265822784%, 1.0013 79.74683544303797%, 1.0014 81.01265822784809%, 1.0015 82.27848101265822%, 1.0015 83.54430379746834%, 1.0015 84.81012658227847%, 1.0015 86.0759493670886%, 1.0015 87.34177215189872%, 1.0015 88.60759493670885%, 1.0014 89.87341772151898%, 1.0014 91.1392405063291%, 1.0013 92.40506329113923%, 1.0013 93.67088607594935%, 1.0012 94.93670886075948%, 1.0011 96.20253164556961%, 1.0011 97.46835443037973%, 1.001 98.73417721518987%, 1 100%)","iterations":1,"direction":"normal","fill":"both"}],"rotators":[],"reveals":[{"anchor":"motion-span","opacity":"1","transform":"none","transition":"","visibility":"hidden"}],"marquees":[{"anchor":"motion-ul-3","pxPerSec":-63,"periodPx":3018}]}} />
+      <DittoMotion spec={{ "waapi": [{ "anchor": "motion-ul", "keyframes": [{ "offset": null, "easing": "linear", "composite": "auto", "transform": "translateX(0px)", "computedOffset": 0 }, { "offset": null, "easing": "linear", "composite": "auto", "transform": "translateX(-2380px)", "computedOffset": 1 }], "duration": 39666.666666666664, "delay": 0, "easing": "linear", "iterations": -1, "direction": "normal", "fill": "auto" }, { "anchor": "motion-ul-2", "keyframes": [{ "offset": null, "easing": "linear", "composite": "auto", "transform": "translateX(0px)", "computedOffset": 0 }, { "offset": null, "easing": "linear", "composite": "auto", "transform": "translateX(2380px)", "computedOffset": 1 }], "duration": 59500, "delay": 0, "easing": "linear", "iterations": -1, "direction": "normal", "fill": "auto" }, { "anchor": "motion-ul-3", "keyframes": [{ "offset": null, "easing": "linear", "composite": "auto", "transform": "translateX(0px)", "computedOffset": 0 }, { "offset": null, "easing": "linear", "composite": "auto", "transform": "translateX(-3024px)", "computedOffset": 1 }], "duration": 46523.07692307692, "delay": 0, "easing": "linear", "iterations": -1, "direction": "normal", "fill": "auto" }, { "anchor": "motion-4", "keyframes": [{ "offset": null, "easing": "linear", "composite": "auto", "opacity": "1", "computedOffset": 0 }, { "offset": null, "easing": "linear", "composite": "auto", "opacity": "0", "computedOffset": 1 }], "duration": 800, "delay": 0, "easing": "linear(0 0%, 0.0054 1.2658227848101267%, 0.0203 2.5316455696202533%, 0.0428 3.79746835443038%, 0.0714 5.063291139240507%, 0.1046 6.329113924050633%, 0.1414 7.594936708860759%, 0.1808 8.860759493670885%, 0.2218 10.126582278481012%, 0.2637 11.392405063291138%, 0.306 12.658227848101264%, 0.3481 13.92405063291139%, 0.3896 15.189873417721516%, 0.4303 16.455696202531644%, 0.4697 17.72151898734177%, 0.5078 18.987341772151897%, 0.5443 20.253164556962023%, 0.5792 21.51898734177215%, 0.6124 22.784810126582276%, 0.6438 24.050632911392402%, 0.6734 25.316455696202528%, 0.7012 26.582278481012654%, 0.7273 27.84810126582278%, 0.7516 29.113924050632907%, 0.7743 30.379746835443033%, 0.7953 31.64556962025316%, 0.8148 32.91139240506329%, 0.8328 34.177215189873415%, 0.8494 35.44303797468354%, 0.8647 36.70886075949367%, 0.8786 37.974683544303794%, 0.8914 39.24050632911392%, 0.9031 40.506329113924046%, 0.9138 41.77215189873417%, 0.9235 43.0379746835443%, 0.9322 44.303797468354425%, 0.9402 45.56962025316455%, 0.9474 46.83544303797468%, 0.9538 48.101265822784804%, 0.9597 49.36708860759493%, 0.9649 50.632911392405056%, 0.9695 51.89873417721518%, 0.9737 53.16455696202531%, 0.9774 54.430379746835435%, 0.9807 55.69620253164556%, 0.9836 56.96202531645569%, 0.9862 58.22784810126581%, 0.9885 59.49367088607594%, 0.9905 60.759493670886066%, 0.9922 62.02531645569619%, 0.9937 63.29113924050632%, 0.995 64.55696202531645%, 0.9962 65.82278481012658%, 0.9971 67.0886075949367%, 0.998 68.35443037974683%, 0.9987 69.62025316455696%, 0.9993 70.88607594936708%, 0.9998 72.15189873417721%, 1.0002 73.41772151898734%, 1.0005 74.68354430379746%, 1.0008 75.94936708860759%, 1.001 77.21518987341771%, 1.0012 78.48101265822784%, 1.0013 79.74683544303797%, 1.0014 81.01265822784809%, 1.0015 82.27848101265822%, 1.0015 83.54430379746834%, 1.0015 84.81012658227847%, 1.0015 86.0759493670886%, 1.0015 87.34177215189872%, 1.0015 88.60759493670885%, 1.0014 89.87341772151898%, 1.0014 91.1392405063291%, 1.0013 92.40506329113923%, 1.0013 93.67088607594935%, 1.0012 94.93670886075948%, 1.0011 96.20253164556961%, 1.0011 97.46835443037973%, 1.001 98.73417721518987%, 1 100%)", "iterations": 1, "direction": "normal", "fill": "both" }, { "anchor": "motion-5", "keyframes": [{ "offset": null, "easing": "linear", "composite": "auto", "opacity": "0", "computedOffset": 0 }, { "offset": null, "easing": "linear", "composite": "auto", "opacity": "1", "computedOffset": 1 }], "duration": 800, "delay": 0, "easing": "linear(0 0%, 0.0054 1.2658227848101267%, 0.0203 2.5316455696202533%, 0.0428 3.79746835443038%, 0.0714 5.063291139240507%, 0.1046 6.329113924050633%, 0.1414 7.594936708860759%, 0.1808 8.860759493670885%, 0.2218 10.126582278481012%, 0.2637 11.392405063291138%, 0.306 12.658227848101264%, 0.3481 13.92405063291139%, 0.3896 15.189873417721516%, 0.4303 16.455696202531644%, 0.4697 17.72151898734177%, 0.5078 18.987341772151897%, 0.5443 20.253164556962023%, 0.5792 21.51898734177215%, 0.6124 22.784810126582276%, 0.6438 24.050632911392402%, 0.6734 25.316455696202528%, 0.7012 26.582278481012654%, 0.7273 27.84810126582278%, 0.7516 29.113924050632907%, 0.7743 30.379746835443033%, 0.7953 31.64556962025316%, 0.8148 32.91139240506329%, 0.8328 34.177215189873415%, 0.8494 35.44303797468354%, 0.8647 36.70886075949367%, 0.8786 37.974683544303794%, 0.8914 39.24050632911392%, 0.9031 40.506329113924046%, 0.9138 41.77215189873417%, 0.9235 43.0379746835443%, 0.9322 44.303797468354425%, 0.9402 45.56962025316455%, 0.9474 46.83544303797468%, 0.9538 48.101265822784804%, 0.9597 49.36708860759493%, 0.9649 50.632911392405056%, 0.9695 51.89873417721518%, 0.9737 53.16455696202531%, 0.9774 54.430379746835435%, 0.9807 55.69620253164556%, 0.9836 56.96202531645569%, 0.9862 58.22784810126581%, 0.9885 59.49367088607594%, 0.9905 60.759493670886066%, 0.9922 62.02531645569619%, 0.9937 63.29113924050632%, 0.995 64.55696202531645%, 0.9962 65.82278481012658%, 0.9971 67.0886075949367%, 0.998 68.35443037974683%, 0.9987 69.62025316455696%, 0.9993 70.88607594936708%, 0.9998 72.15189873417721%, 1.0002 73.41772151898734%, 1.0005 74.68354430379746%, 1.0008 75.94936708860759%, 1.001 77.21518987341771%, 1.0012 78.48101265822784%, 1.0013 79.74683544303797%, 1.0014 81.01265822784809%, 1.0015 82.27848101265822%, 1.0015 83.54430379746834%, 1.0015 84.81012658227847%, 1.0015 86.0759493670886%, 1.0015 87.34177215189872%, 1.0015 88.60759493670885%, 1.0014 89.87341772151898%, 1.0014 91.1392405063291%, 1.0013 92.40506329113923%, 1.0013 93.67088607594935%, 1.0012 94.93670886075948%, 1.0011 96.20253164556961%, 1.0011 97.46835443037973%, 1.001 98.73417721518987%, 1 100%)", "iterations": 1, "direction": "normal", "fill": "both" }, { "anchor": "motion-6", "keyframes": [{ "offset": null, "easing": "linear", "composite": "auto", "opacity": "1", "computedOffset": 0 }, { "offset": null, "easing": "linear", "composite": "auto", "opacity": "0.5", "computedOffset": 1 }], "duration": 800, "delay": 0, "easing": "linear(0 0%, 0.0054 1.2658227848101267%, 0.0203 2.5316455696202533%, 0.0428 3.79746835443038%, 0.0714 5.063291139240507%, 0.1046 6.329113924050633%, 0.1414 7.594936708860759%, 0.1808 8.860759493670885%, 0.2218 10.126582278481012%, 0.2637 11.392405063291138%, 0.306 12.658227848101264%, 0.3481 13.92405063291139%, 0.3896 15.189873417721516%, 0.4303 16.455696202531644%, 0.4697 17.72151898734177%, 0.5078 18.987341772151897%, 0.5443 20.253164556962023%, 0.5792 21.51898734177215%, 0.6124 22.784810126582276%, 0.6438 24.050632911392402%, 0.6734 25.316455696202528%, 0.7012 26.582278481012654%, 0.7273 27.84810126582278%, 0.7516 29.113924050632907%, 0.7743 30.379746835443033%, 0.7953 31.64556962025316%, 0.8148 32.91139240506329%, 0.8328 34.177215189873415%, 0.8494 35.44303797468354%, 0.8647 36.70886075949367%, 0.8786 37.974683544303794%, 0.8914 39.24050632911392%, 0.9031 40.506329113924046%, 0.9138 41.77215189873417%, 0.9235 43.0379746835443%, 0.9322 44.303797468354425%, 0.9402 45.56962025316455%, 0.9474 46.83544303797468%, 0.9538 48.101265822784804%, 0.9597 49.36708860759493%, 0.9649 50.632911392405056%, 0.9695 51.89873417721518%, 0.9737 53.16455696202531%, 0.9774 54.430379746835435%, 0.9807 55.69620253164556%, 0.9836 56.96202531645569%, 0.9862 58.22784810126581%, 0.9885 59.49367088607594%, 0.9905 60.759493670886066%, 0.9922 62.02531645569619%, 0.9937 63.29113924050632%, 0.995 64.55696202531645%, 0.9962 65.82278481012658%, 0.9971 67.0886075949367%, 0.998 68.35443037974683%, 0.9987 69.62025316455696%, 0.9993 70.88607594936708%, 0.9998 72.15189873417721%, 1.0002 73.41772151898734%, 1.0005 74.68354430379746%, 1.0008 75.94936708860759%, 1.001 77.21518987341771%, 1.0012 78.48101265822784%, 1.0013 79.74683544303797%, 1.0014 81.01265822784809%, 1.0015 82.27848101265822%, 1.0015 83.54430379746834%, 1.0015 84.81012658227847%, 1.0015 86.0759493670886%, 1.0015 87.34177215189872%, 1.0015 88.60759493670885%, 1.0014 89.87341772151898%, 1.0014 91.1392405063291%, 1.0013 92.40506329113923%, 1.0013 93.67088607594935%, 1.0012 94.93670886075948%, 1.0011 96.20253164556961%, 1.0011 97.46835443037973%, 1.001 98.73417721518987%, 1 100%)", "iterations": 1, "direction": "normal", "fill": "both" }, { "anchor": "motion-7", "keyframes": [{ "offset": null, "easing": "linear", "composite": "auto", "opacity": "0.5", "computedOffset": 0 }, { "offset": null, "easing": "linear", "composite": "auto", "opacity": "1", "computedOffset": 1 }], "duration": 800, "delay": 0, "easing": "linear(0 0%, 0.0054 1.2658227848101267%, 0.0203 2.5316455696202533%, 0.0428 3.79746835443038%, 0.0714 5.063291139240507%, 0.1046 6.329113924050633%, 0.1414 7.594936708860759%, 0.1808 8.860759493670885%, 0.2218 10.126582278481012%, 0.2637 11.392405063291138%, 0.306 12.658227848101264%, 0.3481 13.92405063291139%, 0.3896 15.189873417721516%, 0.4303 16.455696202531644%, 0.4697 17.72151898734177%, 0.5078 18.987341772151897%, 0.5443 20.253164556962023%, 0.5792 21.51898734177215%, 0.6124 22.784810126582276%, 0.6438 24.050632911392402%, 0.6734 25.316455696202528%, 0.7012 26.582278481012654%, 0.7273 27.84810126582278%, 0.7516 29.113924050632907%, 0.7743 30.379746835443033%, 0.7953 31.64556962025316%, 0.8148 32.91139240506329%, 0.8328 34.177215189873415%, 0.8494 35.44303797468354%, 0.8647 36.70886075949367%, 0.8786 37.974683544303794%, 0.8914 39.24050632911392%, 0.9031 40.506329113924046%, 0.9138 41.77215189873417%, 0.9235 43.0379746835443%, 0.9322 44.303797468354425%, 0.9402 45.56962025316455%, 0.9474 46.83544303797468%, 0.9538 48.101265822784804%, 0.9597 49.36708860759493%, 0.9649 50.632911392405056%, 0.9695 51.89873417721518%, 0.9737 53.16455696202531%, 0.9774 54.430379746835435%, 0.9807 55.69620253164556%, 0.9836 56.96202531645569%, 0.9862 58.22784810126581%, 0.9885 59.49367088607594%, 0.9905 60.759493670886066%, 0.9922 62.02531645569619%, 0.9937 63.29113924050632%, 0.995 64.55696202531645%, 0.9962 65.82278481012658%, 0.9971 67.0886075949367%, 0.998 68.35443037974683%, 0.9987 69.62025316455696%, 0.9993 70.88607594936708%, 0.9998 72.15189873417721%, 1.0002 73.41772151898734%, 1.0005 74.68354430379746%, 1.0008 75.94936708860759%, 1.001 77.21518987341771%, 1.0012 78.48101265822784%, 1.0013 79.74683544303797%, 1.0014 81.01265822784809%, 1.0015 82.27848101265822%, 1.0015 83.54430379746834%, 1.0015 84.81012658227847%, 1.0015 86.0759493670886%, 1.0015 87.34177215189872%, 1.0015 88.60759493670885%, 1.0014 89.87341772151898%, 1.0014 91.1392405063291%, 1.0013 92.40506329113923%, 1.0013 93.67088607594935%, 1.0012 94.93670886075948%, 1.0011 96.20253164556961%, 1.0011 97.46835443037973%, 1.001 98.73417721518987%, 1 100%)", "iterations": 1, "direction": "normal", "fill": "both" }], "rotators": [], "reveals": [{ "anchor": "motion-span", "opacity": "1", "transform": "none", "transition": "", "visibility": "hidden" }], "marquees": [{ "anchor": "motion-ul-3", "pxPerSec": -63, "periodPx": 3018 }] }} />
     </>
   );
 }

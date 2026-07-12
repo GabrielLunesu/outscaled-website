@@ -1,6 +1,10 @@
 import "./globals.css";
 import "./ditto.css";
+import { Headland_One, Inter_Tight } from "next/font/google";
 import type { ReactNode } from "react";
+
+const headlandOne = Headland_One({ weight: "400", subsets: ["latin"], variable: "--font-headland-one" });
+const interTight = Inter_Tight({ subsets: ["latin"], variable: "--font-inter-tight" });
 import { SITE_ORIGIN } from "../lib/site";
 import SvgSprite from "./svgs/sprite";
 
@@ -55,8 +59,8 @@ export const viewport = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang={"en"}>
-      <body className="block text-foreground [font-family:sans-serif] text-xs font-normal not-italic leading-3.5 tracking-[normal] [word-spacing:0px] text-start normal-case whitespace-normal [word-break:normal] [overflow-wrap:normal] indent-0 [text-shadow:none] [font-variant-caps:normal] [font-feature-settings:normal] list-outside [writing-mode:horizontal-tb] [direction:ltr] bg-background">
+    <html lang={"en"} className={`${headlandOne.variable} ${interTight.variable}`}>
+      <body className="block text-foreground [font-family:var(--font-inter-tight),sans-serif] text-xs font-normal not-italic leading-3.5 tracking-[normal] [word-spacing:0px] text-start normal-case whitespace-normal [word-break:normal] [overflow-wrap:normal] indent-0 [text-shadow:none] [font-variant-caps:normal] [font-feature-settings:normal] list-outside [writing-mode:horizontal-tb] [direction:ltr] bg-background">
         <SvgSprite />
         {children}
       </body>
