@@ -577,3 +577,19 @@ h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
   from { transform: translateY(-50%); }
   to { transform: translateY(0); }
 }
+
+@media (max-width: 374px) {
+  body :where(header, main, nav, section, article, div, ul, li):not([class*="absolute"]) {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+@supports (height: 100dvh) {
+  @media (max-width: 1024px) {
+    #hero,
+    #story {
+      height: 100dvh;
+    }
+  }
+}

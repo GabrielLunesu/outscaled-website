@@ -22,9 +22,9 @@ export default function ProductCard({ d }: { d: ProductCardData }) {
   if (d.variant !== "pro-plan") return null;
   return (
     <div className="w-full max-w-[520px] flex relative p-3 rounded-[30px] justify-center items-center content-center shrink-0 gap-2.5 bg-surface shadow-[var(--clr-0)_2px_2px_20px_0px_inset]">
-      <div className="w-full flex relative p-9 rounded-[20px] flex-col justify-start items-start content-start grow shrink-0 basis-0 gap-8 overflow-clip bg-accent shadow-[var(--clr-12)_4px_4px_60px_0px_inset] max-lg:p-[2.3125rem]">
+      <div className="w-full flex relative p-9 rounded-[20px] flex-col justify-start items-start content-start grow shrink-0 basis-0 gap-8 overflow-clip bg-accent shadow-[var(--clr-12)_4px_4px_60px_0px_inset] max-lg:p-[2.3125rem] max-md:p-6">
         <div className="w-full flex relative flex-col justify-center items-center content-center shrink-0 gap-6 overflow-clip">
-          <div className="w-full flex relative justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
+          <div className="w-full flex relative justify-center items-center content-center shrink-0 gap-2.5 overflow-clip max-md:flex-col max-md:items-start max-md:content-start">
             <div className="flex relative flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
               <h6 className="block text-color-001 [font-family:Switzer,_'Switzer_Placeholder',_sans-serif] text-[1.1875rem] font-medium leading-[1.5625rem] tracking-[-0.58px] [font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11'] max-lg:text-sm max-lg:leading-[1.1875rem] max-lg:tracking-[-0.43px]" data-component="heading" dir="auto">
                 {d.title}

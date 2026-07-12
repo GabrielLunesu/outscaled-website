@@ -33,6 +33,9 @@ Outscaled uses a cinematic, editorial landing-page system: warm-white surfaces f
 - The integration rail always shows five equal-width cards.
 - At the mobile breakpoint, each card keeps its logo but hides its label to prevent clipped copy.
 - Cards retain a 16px radius and at least a 40px visual touch target.
+- Generated fixed-width content wrappers must shrink to their parent below the 375px capture width; decorative absolute-positioned artwork may still bleed beyond its frame.
+- Dense horizontal card headers stack on mobile rather than compressing their labels into unreadable columns.
+- Full-height opening sections use the dynamic viewport height on mobile browsers.
 
 ## 7. Motion and Interaction
 
