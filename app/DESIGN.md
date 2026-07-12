@@ -35,7 +35,8 @@ Outscaled uses a cinematic, editorial landing-page system: warm-white surfaces f
 - Cards retain a 16px radius and at least a 40px visual touch target.
 - Generated fixed-width content wrappers must shrink to their parent below the 375px capture width; decorative absolute-positioned artwork may still bleed beyond its frame.
 - Dense horizontal card headers stack on mobile rather than compressing their labels into unreadable columns.
-- Full-height opening sections use the dynamic viewport height on mobile browsers.
+- Full-height opening sections use the dynamic viewport height on mobile browsers; the hero keeps enough height for its complete content on short phones.
+- The mobile navigation floats directly over the page with a transparent, unblurred surface; larger breakpoints keep their existing treatment.
 
 ## 7. Motion and Interaction
 
