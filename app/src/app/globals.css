@@ -601,23 +601,6 @@ h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
     backdrop-filter: none;
   }
 
-  nav[data-component="nav"].bg-color-002 {
-    padding: 8px 16px;
-    gap: 8px;
-  }
-
-  img[data-logo] {
-    height: 56px;
-  }
-
-  nav[data-component="nav"].bg-color-002 a[data-component="link"] {
-    height: 56px;
-  }
-
-  nav[data-component="nav"].bg-color-002 > nav {
-    gap: 8px;
-  }
-
   #hero {
     height: max(100dvh, 812px);
   }
@@ -625,4 +608,5 @@ h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
   #hero .h-screen {
     height: 100%;
   }
+
 }

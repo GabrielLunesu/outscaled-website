@@ -50,31 +50,31 @@ export default function Page() {
         <div className="min-h-screen flex relative flex-col justify-start items-center content-center overflow-clip bg-background">
           <div className="w-320 h-20 block fixed top-[-6px] left-[clamp(187.5px,_50%,_calc(100%_-_187.5px))] z-10 min-w-0 shrink-0 order-[-1000] transform-[matrix(1,0,0,1,-640,0)] max-md:w-[23.4375rem] max-md:transform-[matrix(1,0,0,1,-187.5,0)] md:max-lg:w-192 md:max-lg:transform-[matrix(1,0,0,1,-384,0)] 2xl:w-screen 2xl:transform-[translateX(-50%)]">
             <div className="contents">
-              <nav className="w-320 flex relative py-4 px-5 justify-center items-center content-center gap-2.5 overflow-clip bg-color-002 [backdrop-filter:blur(10px)] max-md:w-[23.4375rem] md:max-lg:w-192 2xl:w-screen 2xl:[backdrop-filter:blur(0px)] 2xl:bg-[initial]" data-component="nav">
-                <nav className="w-[95.5%] flex relative max-w-300 justify-center items-center content-center grow shrink-0 basis-0 gap-2.5 max-md:w-[84%] md:max-lg:w-[92.5%]" data-component="nav">
-                  <div className="w-296.5 flex relative z-1 justify-start items-center content-center grow shrink-0 basis-0 gap-3 overflow-clip max-md:w-[17.5625rem] md:max-lg:w-168.5 2xl:w-[24.8125rem] 2xl:z-[initial] 2xl:grow-[initial] 2xl:basis-[initial]">
+              <nav className="w-320 flex relative py-3 px-4 justify-center items-center content-center gap-2 overflow-clip bg-color-002 [backdrop-filter:blur(10px)] max-md:w-[23.4375rem] max-md:py-2 md:max-lg:w-192 2xl:w-screen 2xl:[backdrop-filter:blur(0px)] 2xl:bg-[initial]" data-component="nav">
+                <nav className="w-[95.5%] flex relative max-w-300 justify-center items-center content-center grow shrink-0 basis-0 gap-2 max-md:w-[84%] md:max-lg:w-[92.5%]" data-component="nav">
+                  <div className="w-296.5 flex relative z-1 justify-start items-center content-center grow shrink-0 basis-0 gap-2 overflow-clip max-md:w-[17.5625rem] md:max-lg:w-168.5 2xl:w-[24.8125rem] 2xl:z-[initial] 2xl:grow-[initial] 2xl:basis-[initial]">
                     <div className="block relative shrink-0">
-                      <a className="h-22 flex relative justify-start items-center content-center gap-1 text-primary cursor-pointer" data-component="link" href="/">
-                        <img className="h-22 w-auto block" data-logo="dark" src="/assets/cloned/images/outscaled/logo.svg" alt="Outscaled" width="966" height="966" />
-                        <img className="h-22 w-auto hidden" data-logo="white" src="/assets/cloned/images/outscaled/logo-white.svg" alt="Outscaled" width="966" height="966" />
+                      <a className="h-16 flex relative justify-start items-center content-center gap-1 text-primary cursor-pointer max-md:h-14" data-component="link" href="/">
+                        <img className="h-16 w-auto block max-md:h-14" data-logo="dark" src="/assets/cloned/images/outscaled/logo.svg" alt="Outscaled" width="966" height="966" />
+                        <img className="h-16 w-auto hidden max-md:h-14" data-logo="white" src="/assets/cloned/images/outscaled/logo-white.svg" alt="Outscaled" width="966" height="966" />
                       </a>
                     </div>
                   </div>
                   <div className="hidden 2xl:flex 2xl:relative 2xl:justify-center 2xl:items-center 2xl:content-center 2xl:shrink-0 2xl:gap-5 2xl:overflow-clip">
                     {Tile_data.map((d, i) => <Tile key={i} d={d} styles={Tile_styles[i]} />)}
                   </div>
-                  <button className="hidden 2xl:w-99 2xl:flex 2xl:relative 2xl:justify-end 2xl:items-center 2xl:content-center 2xl:shrink-0 2xl:gap-2.5 2xl:overflow-clip 2xl:text-center 2xl:cursor-default">
+                  <div className="hidden 2xl:w-99 2xl:flex 2xl:relative 2xl:justify-end 2xl:items-center 2xl:content-center 2xl:shrink-0 2xl:gap-2.5 2xl:overflow-clip 2xl:text-center">
                     <div className="hidden 2xl:w-[134.3px] 2xl:block 2xl:relative 2xl:shrink-0">
-                      <div className="hidden 2xl:flex 2xl:relative 2xl:pt-3 2xl:pb-2 2xl:justify-center 2xl:items-center 2xl:content-center 2xl:gap-1 2xl:overflow-clip 2xl:text-primary 2xl:cursor-pointer" href="/explore#hero">
+                      <a className="hidden 2xl:flex 2xl:relative 2xl:pt-3 2xl:pb-2 2xl:justify-center 2xl:items-center 2xl:content-center 2xl:gap-1 2xl:overflow-clip 2xl:text-primary 2xl:cursor-pointer" href="/explore#hero">
                         <div className="hidden 2xl:basis-full 2xl:shrink-0 2xl:flex 2xl:relative 2xl:pb-0.5 2xl:justify-center 2xl:items-center 2xl:content-center 2xl:gap-1 2xl:overflow-hidden after:content-[''] after:block after:absolute after:inset-0 after:w-[134.3px] after:h-6 max-lg:after:hidden">
                           <div className="hidden 2xl:w-[112.3px] 2xl:flex 2xl:relative 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:content-center 2xl:shrink-0 2xl:gap-0.5">
                             <div className="hidden 2xl:w-[112.3px] 2xl:flex 2xl:relative 2xl:flex-col 2xl:justify-start 2xl:shrink-0 2xl:whitespace-pre 2xl:text-nowrap">
-                              <p className="hidden 2xl:block 2xl:text-color-001 2xl:[font-family:Geist,_'Geist_Placeholder',_sans-serif] 2xl:text-base 2xl:font-medium 2xl:leading-6 2xl:tracking-[-0.29px] 2xl:text-start 2xl:[font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11']" dir="auto">
+                              <p className="hidden 2xl:block 2xl:text-color-001 2xl:[font-family:Geist,_'Geist_Placeholder',_sans-serif] 2xl:text-sm 2xl:font-medium 2xl:leading-5 2xl:tracking-[-0.29px] 2xl:text-start 2xl:[font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11']" dir="auto">
                                 Get started
                               </p>
                             </div>
                             <div className="hidden 2xl:w-[112.3px] 2xl:h-full 2xl:flex 2xl:absolute 2xl:top-5.5 2xl:z-1 2xl:min-w-0 2xl:flex-col 2xl:justify-start 2xl:shrink-0 2xl:whitespace-pre 2xl:text-nowrap">
-                              <p className="hidden 2xl:block 2xl:text-color-001 2xl:[font-family:Geist,_'Geist_Placeholder',_sans-serif] 2xl:text-base 2xl:font-medium 2xl:leading-6 2xl:tracking-[-0.29px] 2xl:text-start 2xl:[font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11']" dir="auto">
+                              <p className="hidden 2xl:block 2xl:text-color-001 2xl:[font-family:Geist,_'Geist_Placeholder',_sans-serif] 2xl:text-sm 2xl:font-medium 2xl:leading-5 2xl:tracking-[-0.29px] 2xl:text-start 2xl:[font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11']" dir="auto">
                                 Get started
                               </p>
                             </div>
@@ -83,9 +83,9 @@ export default function Page() {
                             <Icon2 />
                           </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                  </button>
+                  </div>
                 </nav>
                 <div className="w-11 h-11 block relative z-1 shrink-0 order-[1] overflow-hidden cursor-pointer 2xl:hidden">
                   <div className="w-5 h-0.5 block absolute top-[26.5px] left-3 rounded-[10px] shrink-0 overflow-hidden bg-foreground 2xl:hidden" />
@@ -254,7 +254,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="w-full flex absolute bottom-0 inset-x-0 z-1 pb-12 px-6 justify-center items-center content-center max-lg:pb-8">
-                <ul className="flex relative justify-center items-center flex-wrap gap-x-8 gap-y-4 [list-style-type:none] list-outside max-lg:gap-x-6 [&_li]:transform-[none] [&_li_div]:h-9 [&_img]:h-9 [&_li]:w-auto [&_li_div]:w-auto [&_img]:w-auto" role="group">
+                <ul className="flex relative justify-center items-center flex-wrap gap-x-8 gap-y-4 [list-style-type:none] list-outside max-lg:gap-x-6 max-md:w-full max-md:max-w-70 max-md:grid max-md:grid-cols-5 max-md:gap-2 [&_li]:transform-[none] [&_li_div]:h-9 [&_img]:h-9 [&_li]:w-auto [&_li_div]:w-auto [&_img]:w-auto max-md:[&_li]:w-full max-md:[&_li_div]:w-full max-md:[&_img]:w-full" role="group">
                   {Logo4_data.map((d, i) => <Logo4 key={i} d={d} styles={Logo4_styles[i]} />)}
                 </ul>
               </div>
