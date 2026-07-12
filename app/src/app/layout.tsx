@@ -1,0 +1,65 @@
+import "./globals.css";
+import "./ditto.css";
+import type { ReactNode } from "react";
+import { SITE_ORIGIN } from "../lib/site";
+import SvgSprite from "./svgs/sprite";
+
+export const metadata = {
+  "metadataBase": new URL(SITE_ORIGIN || "http://localhost:3000"),
+  "title": "Erie - AI Creative Platform Template",
+  "description": "Erie is a premium Framer template built for AI SaaS platforms, creative tools, and generative AI startups. Showcase your product with cinematic visuals, bold typography, and a high-converting layout that turns visitors into users.",
+  "robots": "max-image-preview:large",
+  "alternates": {
+    "canonical": "/"
+  },
+  "openGraph": {
+    "title": "Erie - AI Creative Platform Template",
+    "description": "Erie is a premium Framer template built for AI SaaS platforms, creative tools, and generative AI startups. Showcase your product with cinematic visuals, bold typography, and a high-converting layout that turns visitors into users.",
+    "type": "website",
+    "url": "/",
+    "images": [
+      "https://framerusercontent.com/images/eocjpipeCV8HsjiQ9mupZkj77c.png"
+    ]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Erie - AI Creative Platform Template",
+    "description": "Erie is a premium Framer template built for AI SaaS platforms, creative tools, and generative AI startups. Showcase your product with cinematic visuals, bold typography, and a high-converting layout that turns visitors into users.",
+    "images": [
+      "https://framerusercontent.com/images/eocjpipeCV8HsjiQ9mupZkj77c.png"
+    ]
+  },
+  "icons": {
+    "icon": [
+      {
+        "url": "/assets/cloned/images/67f2a1b4c28b.png",
+        "media": "(prefers-color-scheme: light)"
+      },
+      {
+        "url": "/assets/cloned/images/67f2a1b4c28b.png",
+        "media": "(prefers-color-scheme: dark)"
+      }
+    ],
+    "apple": [
+      {
+        "url": "/assets/cloned/images/1af1931c5cdc.png"
+      }
+    ]
+  }
+};
+export const viewport = {
+  "width": "device-width",
+  "initialScale": 1
+};
+
+
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang={"en"}>
+      <body className="block text-foreground [font-family:sans-serif] text-xs font-normal not-italic leading-3.5 tracking-[normal] [word-spacing:0px] text-start normal-case whitespace-normal [word-break:normal] [overflow-wrap:normal] indent-0 [text-shadow:none] [font-variant-caps:normal] [font-feature-settings:normal] list-outside [writing-mode:horizontal-tb] [direction:ltr] bg-background">
+        <SvgSprite />
+        {children}
+      </body>
+    </html>
+  );
+}
