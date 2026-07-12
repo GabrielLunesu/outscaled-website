@@ -254,7 +254,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="w-full flex absolute bottom-0 inset-x-0 z-1 pb-12 px-6 justify-center items-center content-center max-lg:pb-8">
-                <ul className="flex relative justify-center items-center flex-wrap gap-x-15 gap-y-4 [list-style-type:none] list-outside opacity-70 max-lg:gap-x-8 [&_li]:transform-[none] [&_div]:[filter:brightness(0)_invert(1)] [&_li_div]:h-6 [&_img]:h-6 [&_li]:w-auto [&_li_div]:w-auto [&_img]:w-auto" role="group">
+                <ul className="flex relative justify-center items-center flex-wrap gap-x-8 gap-y-4 [list-style-type:none] list-outside max-lg:gap-x-6 [&_li]:transform-[none] [&_li_div]:h-9 [&_img]:h-9 [&_li]:w-auto [&_li_div]:w-auto [&_img]:w-auto" role="group">
                   {Logo4_data.map((d, i) => <Logo4 key={i} d={d} styles={Logo4_styles[i]} />)}
                 </ul>
               </div>
