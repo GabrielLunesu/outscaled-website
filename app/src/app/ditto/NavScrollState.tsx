@@ -1,13 +1,18 @@
 "use client";
 import { useEffect } from "react";
 
-/** Mirrors the source site's nav variant switch: after scrolling one full viewport
- *  height, the fixed nav gains a translucent light background + dark text
- *  (styled in ditto.css via html[data-scrolled]). */
+/** Nav variant switch: the fixed nav keeps white text/logo over the dark hero and
+ *  black #story sections, then flips to dark text once the first light section
+ *  (#features) reaches the top of the viewport (styled in ditto.css via
+ *  html[data-scrolled]). */
 export default function NavScrollState() {
   useEffect(() => {
     const update = () => {
-      document.documentElement.toggleAttribute("data-scrolled", window.scrollY >= window.innerHeight);
+      const features = document.getElementById("features");
+      const threshold = features
+        ? window.scrollY + features.getBoundingClientRect().top - 1
+        : window.innerHeight * 2;
+      document.documentElement.toggleAttribute("data-scrolled", window.scrollY >= threshold);
     };
     update();
     window.addEventListener("scroll", update, { passive: true });

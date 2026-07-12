@@ -55,14 +55,14 @@
 
 /* Design tokens (values). */
 :root {
-  --background: rgb(245, 245, 245);
+  --background: rgb(255, 254, 251);
   --foreground: rgb(0, 0, 0);
   --primary: rgb(0, 0, 238);
   --accent: rgb(2, 16, 28);
   --muted-foreground: rgb(86, 86, 86);
   --surface: rgba(255, 255, 255, 0.2);
   --surface-2: rgba(255, 255, 255, 0.4);
-  --color-001: rgb(255, 255, 255);
+  --color-001: rgb(255, 254, 251);
   --color-002: rgba(255, 255, 255, 0.8);
   --color-003: rgba(0, 0, 0, 0.5);
   --color-004: rgb(1, 74, 138);
@@ -554,4 +554,26 @@ fieldset, legend { min-width: 0; }
 }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
 html, body { overflow-x: clip; }
+}
+
+/* Site-wide typography: Headland One for headings, Inter Tight for everything else.
+   Unlayered + !important so it wins over the cloned inline [font-family:...] utilities. */
+body, body * {
+  font-family: var(--font-inter-tight), sans-serif !important;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6,
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+  font-family: var(--font-headland-one), serif !important;
+}
+
+/* Testimonials marquee: infinite vertical scroll, track = two identical halves,
+   so -50% lands exactly on the seam. Paused on hover in the markup. */
+@keyframes testimonials-scroll-up {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+@keyframes testimonials-scroll-down {
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
 }

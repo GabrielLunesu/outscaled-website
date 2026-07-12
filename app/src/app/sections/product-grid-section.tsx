@@ -4,10 +4,10 @@ import ProductCard from "../components/product-card";
 import { Logo8_styles, Tile2_styles } from "../_styles";
 import { tile2Data as tile2DataContent, products as productsContent } from "../content";
 const Logo8_data: Logo8Data[] = [
-    { height: "4517", sizes: "calc(1000px * 0.9997)", imgSrc: "/assets/cloned/images/88ab5ebd250d.png", srcSet: "/assets/cloned/images/5ab24d237039.png 512w, /assets/cloned/images/3ccbbcfdad7c.png 1024w, /assets/cloned/images/9cc7f33269f2.png 2048w, /assets/cloned/images/c8fb4ce5e102.png 4096w, /assets/cloned/images/88ab5ebd250d.png 8000w" },
-    { height: "4491", sizes: "calc(1000px * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w" },
-    { height: "4491", sizes: "calc(1000px * 0.9994)", imgSrc: "/assets/cloned/images/aa307bc1dd1c.png", srcSet: "/assets/cloned/images/b558c8a2266c.png 512w, /assets/cloned/images/a264511b2b8d.png 1024w, /assets/cloned/images/c11def768d20.png 2048w, /assets/cloned/images/a78939efe37f.png 4096w, /assets/cloned/images/aa307bc1dd1c.png 8000w" },
-    { height: "4517", sizes: "calc(1000px * 0.9997)", imgSrc: "/assets/cloned/images/88ab5ebd250d.png", srcSet: "/assets/cloned/images/5ab24d237039.png 512w, /assets/cloned/images/3ccbbcfdad7c.png 1024w, /assets/cloned/images/9cc7f33269f2.png 2048w, /assets/cloned/images/c8fb4ce5e102.png 4096w, /assets/cloned/images/88ab5ebd250d.png 8000w" }
+    { height: "1080", imgSrc: "/assets/cloned/images/clouds/5.svg" },
+    { height: "1080", imgSrc: "/assets/cloned/images/clouds/2.svg" },
+    { height: "1080", imgSrc: "/assets/cloned/images/clouds/3.svg" },
+    { height: "1080", imgSrc: "/assets/cloned/images/clouds/1.svg" }
 ];
 /** Product Grid section. */
 export default function ProductGridSection({ logo8Data = Logo8_data, tile2Data = tile2DataContent, products = productsContent } = {}) {
@@ -15,7 +15,7 @@ export default function ProductGridSection({ logo8Data = Logo8_data, tile2Data =
     <section className="w-full flex relative justify-center items-center content-center shrink-0 gap-2.5 overflow-clip max-lg:flex-col" id="pricing">
       <div className="h-full block absolute top-0 inset-x-0 z-0 min-w-0 shrink-0">
         <div className="contents">
-          <div className="h-[142.7625rem] block relative gap-2.5 overflow-clip max-md:h-[140.2875rem] max-lg:[mask-image:initial] md:max-lg:h-[2090.7px] 2xl:h-[1254.5px]" data-ditto-id="style-div-3">
+          <div className="h-[142.7625rem] block relative gap-2.5 overflow-clip max-md:h-[140.2875rem] max-lg:[mask-image:initial] md:max-lg:h-[2090.7px] 2xl:h-[1254.5px]" data-ditto-id="style-div-3" style={{ backgroundImage: "linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), linear-gradient(180deg, rgba(230,135,60,0) calc(56.25vw - 180px), rgb(230,135,60) calc(56.25vw - 10px)), url(/assets/cloned/images/pricing/3.png)", backgroundSize: "auto, auto, 100% auto", backgroundPosition: "top, top, top", backgroundRepeat: "no-repeat" }}>
             {logo8Data.map((d, i) => <Logo8 key={i} d={d} styles={Logo8_styles[i]} />)}
           </div>
         </div>
@@ -29,192 +29,17 @@ export default function ProductGridSection({ logo8Data = Logo8_data, tile2Data =
           </div>
           <div className="w-full max-w-175 flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
             <h2 className="block text-color-001 [font-family:Switzer,_'Switzer_Placeholder',_sans-serif] text-[3.625rem] leading-[4.3125rem] tracking-[-3.46px] text-center [font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11'] max-lg:text-[2.625rem] max-lg:leading-[3.125rem] max-lg:tracking-[-2.5px]" data-component="heading" dir="auto">
-              <span className="inline whitespace-nowrap text-nowrap">
-                <span className="inline-block">
-                  S
-                </span>
-                <span className="inline-block">
-                  i
-                </span>
-                <span className="inline-block">
-                  m
-                </span>
-                <span className="inline-block">
-                  p
-                </span>
-                <span className="inline-block">
-                  l
-                </span>
-                <span className="inline-block">
-                  e
-                </span>
-              </span>
-              {" "}
-              <span className="inline whitespace-nowrap text-nowrap">
-                <span className="inline-block">
-                  p
-                </span>
-                <span className="inline-block">
-                  r
-                </span>
-                <span className="inline-block">
-                  i
-                </span>
-                <span className="inline-block">
-                  c
-                </span>
-                <span className="inline-block">
-                  i
-                </span>
-                <span className="inline-block">
-                  n
-                </span>
-                <span className="inline-block">
-                  g
-                </span>
-                <span className="inline-block">
-                  .
-                </span>
-              </span>
-              {" "}
-              <span className="inline whitespace-nowrap text-nowrap">
-                <span className="inline-block">
-                  N
-                </span>
-                <span className="inline-block">
-                  o
-                </span>
-              </span>
-              {" "}
-              <span className="inline whitespace-nowrap text-nowrap">
-                <span className="inline-block">
-                  s
-                </span>
-                <span className="inline-block">
-                  u
-                </span>
-                <span className="inline-block">
-                  r
-                </span>
-                <span className="inline-block">
-                  p
-                </span>
-                <span className="inline-block">
-                  r
-                </span>
-                <span className="inline-block">
-                  i
-                </span>
-                <span className="inline-block">
-                  s
-                </span>
-                <span className="inline-block">
-                  e
-                </span>
-                <span className="inline-block">
-                  s
-                </span>
-                <span className="inline-block">
-                  .
-                </span>
-              </span>
-              {" "}
-              <span className="inline whitespace-nowrap text-nowrap">
-                <span className="inline-block">
-                  S
-                </span>
-                <span className="inline-block">
-                  t
-                </span>
-                <span className="inline-block">
-                  a
-                </span>
-                <span className="inline-block">
-                  r
-                </span>
-                <span className="inline-block">
-                  t
-                </span>
-              </span>
-              {" "}
-              <span className="inline whitespace-nowrap text-nowrap">
-                <span className="inline-block">
-                  f
-                </span>
-                <span className="inline-block">
-                  r
-                </span>
-                <span className="inline-block">
-                  e
-                </span>
-                <span className="inline-block">
-                  e
-                </span>
-                <span className="inline-block">
-                  .
-                </span>
-              </span>
-              {" "}
-              <span className="inline whitespace-nowrap text-nowrap">
-                <span className="inline-block">
-                  S
-                </span>
-                <span className="inline-block">
-                  c
-                </span>
-                <span className="inline-block">
-                  a
-                </span>
-                <span className="inline-block">
-                  l
-                </span>
-                <span className="inline-block">
-                  e
-                </span>
-              </span>
-              {" "}
-              <span className="inline whitespace-nowrap text-nowrap">
-                <span className="inline-block">
-                  w
-                </span>
-                <span className="inline-block">
-                  h
-                </span>
-                <span className="inline-block">
-                  e
-                </span>
-                <span className="inline-block">
-                  n
-                </span>
-              </span>
-              {" "}
-              <span className="inline whitespace-nowrap text-nowrap">
-                <span className="inline-block">
-                  r
-                </span>
-                <span className="inline-block">
-                  e
-                </span>
-                <span className="inline-block">
-                  a
-                </span>
-                <span className="inline-block">
-                  d
-                </span>
-                <span className="inline-block">
-                  y
-                </span>
-                <span className="inline-block">
-                  .
-                </span>
-              </span>
+              Scale when ready.
             </h2>
+            <p className="block text-color-002 [font-family:Geist,_'Geist_Placeholder',_sans-serif] text-lg leading-[1.5rem] text-center mt-4 [font-feature-settings:'blwf',_'cv03',_'cv04',_'cv09',_'cv11'] max-lg:text-base" dir="auto">
+              One plan while we&rsquo;re early. Everything included, nothing gated.
+            </p>
           </div>
           <div className="w-full flex relative flex-wrap justify-center items-center content-center shrink-0 gap-3">
             {tile2Data.map((d, i) => <Tile2 key={i} d={d} styles={Tile2_styles[i]} />)}
           </div>
         </div>
-        <div className="w-full h-[1689.7px] flex relative flex-col justify-center items-end content-end shrink-0 gap-4 max-md:h-[1748.7px] md:max-lg:h-[102.8rem] 2xl:h-150 2xl:[flex-direction:initial] grid-cols-1 2xl:grid-cols-3">
+        <div className="w-full flex relative flex-col justify-center items-center content-center shrink-0 gap-4">
           {products.map((d) => <ProductCard key={d.variant} d={d} />)}
         </div>
       </section>

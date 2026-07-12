@@ -19,23 +19,25 @@ export type Logo2DataItem = {
   width: string;
 };
 export const logo2Data: Logo2DataItem[] = [
-    { height: "2688", imgSrc: "/assets/cloned/images/c6a6c5b79eba.png", srcSet: "/assets/cloned/images/1112b4b871c5.png 682w, /assets/cloned/images/34d182eb6d69.png 1365w, /assets/cloned/images/c6a6c5b79eba.png 1792w", width: "1792" },
-    { height: "1200", imgSrc: "/assets/cloned/images/23d9b8cbd32e.png", srcSet: "/assets/cloned/images/3bb61dba17c4.png 819w, /assets/cloned/images/23d9b8cbd32e.png 960w", width: "960" },
-    { height: "2048", imgSrc: "/assets/cloned/images/8eab5b7aaca4.png", srcSet: "/assets/cloned/images/afc8696ed400.png 512w, /assets/cloned/images/f6e62445d439.png 1024w, /assets/cloned/images/8eab5b7aaca4.png 2048w", width: "2048" },
-    { height: "2434", imgSrc: "/assets/cloned/images/1e1e8a9277d2.png", srcSet: "/assets/cloned/images/ccb0143d11bb.png 753w, /assets/cloned/images/ec7e51a2d1c6.png 1507w, /assets/cloned/images/1e1e8a9277d2.png 1792w", width: "1792" }
+    { height: "2688", imgSrc: "https://placehold.co/1792x2688", srcSet: "https://placehold.co/683x1024 682w, https://placehold.co/1365x2048 1365w, https://placehold.co/1792x2688 1792w", width: "1792" },
+    { height: "1200", imgSrc: "https://placehold.co/960x1200", srcSet: "https://placehold.co/819x1024 819w, https://placehold.co/960x1200 960w", width: "960" },
+    { height: "2048", imgSrc: "https://placehold.co/2048x2048", srcSet: "https://placehold.co/512x512 512w, https://placehold.co/1024x1024 1024w, https://placehold.co/2048x2048 2048w", width: "2048" },
+    { height: "2434", imgSrc: "https://placehold.co/1792x2434", srcSet: "https://placehold.co/754x1024 753w, https://placehold.co/1508x2048 1507w, https://placehold.co/1792x2434 1792w", width: "1792" }
 ];
 
+export type Integration = "meta" | "google" | "shopify" | "slack" | "more";
+
 export type LogosItem = {
-  height: string;
-  imgSrc: string;
-  srcSet: string;
-  width: string;
+  label: string;
+  integration: Integration;
 };
+
 export const logos: LogosItem[] = [
-    { height: "2688", imgSrc: "/assets/cloned/images/c6a6c5b79eba.png", srcSet: "/assets/cloned/images/1112b4b871c5.png 682w, /assets/cloned/images/34d182eb6d69.png 1365w, /assets/cloned/images/c6a6c5b79eba.png 1792w", width: "1792" },
-    { height: "1200", imgSrc: "/assets/cloned/images/23d9b8cbd32e.png", srcSet: "/assets/cloned/images/3bb61dba17c4.png 819w, /assets/cloned/images/23d9b8cbd32e.png 960w", width: "960" },
-    { height: "2048", imgSrc: "/assets/cloned/images/8eab5b7aaca4.png", srcSet: "/assets/cloned/images/afc8696ed400.png 512w, /assets/cloned/images/f6e62445d439.png 1024w, /assets/cloned/images/8eab5b7aaca4.png 2048w", width: "2048" },
-    { height: "2434", imgSrc: "/assets/cloned/images/1e1e8a9277d2.png", srcSet: "/assets/cloned/images/ccb0143d11bb.png 753w, /assets/cloned/images/ec7e51a2d1c6.png 1507w, /assets/cloned/images/1e1e8a9277d2.png 1792w", width: "1792" }
+    { label: "Meta Ads", integration: "meta" },
+    { label: "Google Ads", integration: "google" },
+    { label: "Shopify", integration: "shopify" },
+    { label: "Slack", integration: "slack" },
+    { label: "More apps", integration: "more" }
 ];
 
 export type Logos2Item = {
@@ -46,53 +48,53 @@ export type Logos2Item = {
   srcSet?: string;
 };
 export const logos2: Logos2Item[] = [
-    { ariaposinset: "1", imgSrc: "/assets/cloned/images/fc7de95a2765.png", width: "345" },
-    { ariaposinset: "2", imgSrc: "/assets/cloned/images/aa6f980af627.png", width: "414" },
-    { ariaposinset: "3", imgSrc: "/assets/cloned/images/670f58fa8c5a.png", width: "555", sizes: "(min-width: 1440px) 219.2593px, (min-width: 810px) and (max-width: 1439.98px) 219.2593px, (max-width: 809.98px) 219.2593px", srcSet: "/assets/cloned/images/0f36254def1e.png 512w, /assets/cloned/images/670f58fa8c5a.png 555w" },
-    { ariaposinset: "4", imgSrc: "/assets/cloned/images/6882c9114888.png", width: "438" },
-    { ariaposinset: "5", imgSrc: "/assets/cloned/images/492a9aee7001.png", width: "528", sizes: "(min-width: 1440px) 208.5926px, (min-width: 810px) and (max-width: 1439.98px) 208.5926px, (max-width: 809.98px) 208.5926px", srcSet: "/assets/cloned/images/4602dc1d2094.png 512w, /assets/cloned/images/492a9aee7001.png 528w" }
+    { ariaposinset: "1", imgSrc: "https://placehold.co/345x81", width: "345" },
+    { ariaposinset: "2", imgSrc: "https://placehold.co/414x81", width: "414" },
+    { ariaposinset: "3", imgSrc: "https://placehold.co/555x81", width: "555", sizes: "(min-width: 1440px) 219.2593px, (min-width: 810px) and (max-width: 1439.98px) 219.2593px, (max-width: 809.98px) 219.2593px", srcSet: "https://placehold.co/555x81 512w, https://placehold.co/555x81 555w" },
+    { ariaposinset: "4", imgSrc: "https://placehold.co/438x81", width: "438" },
+    { ariaposinset: "5", imgSrc: "https://placehold.co/528x81", width: "528", sizes: "(min-width: 1440px) 208.5926px, (min-width: 810px) and (max-width: 1439.98px) 208.5926px, (max-width: 809.98px) 208.5926px", srcSet: "https://placehold.co/528x81 512w, https://placehold.co/528x81 528w" }
 ];
 
 export type FeatureCardDataItem = {
   title: string;
 };
 export const featureCardData: FeatureCardDataItem[] = [
-    { title: "Gemini" },
-    { title: "Midjourney" },
-    { title: "Erie" }
+    { title: "AI chatbots" },
+    { title: "Build it yourself" },
+    { title: "Outscaled" }
 ];
 
 export type Logos3Item = {
   description: string;
 };
 export const logos3: Logos3Item[] = [
-    { description: "Image Generation" },
-    { description: "Native Image → Video" },
-    { description: "Sub-3s Generation" },
-    { description: "Style DNA™ Training" },
-    { description: "Inpainting Canvas" },
-    { description: "Free Tier" }
+    { description: "Knows your brand and products" },
+    { description: "Works inside Shopify, ads, and your inbox" },
+    { description: "Works while you sleep" },
+    { description: "Setup" },
+    { description: "Approvals and control" },
+    { description: "Gets better every run" },
+    { description: "Maintenance" }
 ];
 
 export type FeaturesItem = {
   variant: string;
-  badge?: string;
+  subtitle?: string;
   title: string;
 };
 export const features: FeaturesItem[] = [
-    { variant: "gemini", badge: "Limited", title: "Gemini" },
-    { variant: "midjourney", badge: "Limited", title: "Midjourney" },
-    { variant: "erie", title: "Erie" }
+    { variant: "gemini", title: "AI chatbots", subtitle: "ChatGPT, Claude, Gemini" },
+    { variant: "midjourney", title: "Build it yourself", subtitle: "custom agents, agencies" },
+    { variant: "erie", title: "Outscaled" }
 ];
 
 export type Tile2DataItem = {
   description: string;
 };
 export const tile2Data: Tile2DataItem[] = [
-    { description: "99.9% uptime" },
-    { description: "SOC 2 compliant" },
     { description: "No hidden fees" },
-    { description: "Cancel anytime" }
+    { description: "Cancel anytime" },
+    { description: "1,000 credits on us" }
 ];
 
 export type ProductsItem = {
@@ -104,9 +106,7 @@ export type ProductsItem = {
   price?: string;
 };
 export const products: ProductsItem[] = [
-    { variant: "free", eyebrow: "Basic Plan", title: "Free", description: "What’s included" },
-    { variant: "standard-plan", badge: "POPULAR", title: "Standard Plan", description: "What’s included", price: "$15" },
-    { variant: "pro-plan", title: "Pro Plan", description: "Value for money", price: "$25" }
+    { variant: "pro-plan", title: "Early Access", description: "Founding merchant", price: "$99" }
 ];
 
 export type Tile3DataItem = {
@@ -136,4 +136,3 @@ export const tile4Data: Tile4DataItem[] = [
     { href: "/explore#hero", description: "Explore" },
     { href: "/tutorials#hero", description: "Tutorials" }
 ];
-

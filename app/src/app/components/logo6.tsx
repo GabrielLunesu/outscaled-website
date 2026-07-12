@@ -3,9 +3,9 @@ import { cn } from "../../lib/utils";
 export type Logo6Data = {
   kind?: string;
   height: string;
-  sizes: string;
+  sizes?: string;
   imgSrc: string;
-  srcSet: string;
+  srcSet?: string;
 };
 /** A logo. */
 export default function Logo6({ d, styles }: { d: Logo6Data; styles: Logo6Styles }) {
@@ -14,7 +14,7 @@ export default function Logo6({ d, styles }: { d: Logo6Data; styles: Logo6Styles
       <div className={styles.className2}>
         <div className={styles.className3}>
           <div className={styles.className4}>
-            <img className={cn("2xl:h-175", styles.className5)} data-component={d.kind} alt="" height={d.height} sizes={d.sizes} src={d.imgSrc} srcSet={d.srcSet} width="8000" />
+            <img className={cn("2xl:h-175", styles.className5)} data-component={d.kind} alt="" height={d.height} sizes={d.sizes} src={d.imgSrc} srcSet={d.srcSet} width="1080" />
           </div>
         </div>
       </div>

@@ -1,114 +1,106 @@
-import MediaTile, { type MediaTileData } from "../components/media-tile";
-import MediaTile2, { type MediaTile2Data } from "../components/media-tile2";
-import { MediaTile_styles, MediaTile2_styles } from "../_styles";
-const MediaTile_data: MediaTileData[] = [
-    { name: "1", name2: "1", kind: "image", height: "2912", imgSrc: "/assets/cloned/images/92d2694bf867.png", srcSet: "/assets/cloned/images/40bd15d6955e.png 573w, /assets/cloned/images/53660d8ddfcf.png 1147w, /assets/cloned/images/92d2694bf867.png 1632w", width: "1632", kind2: "icon", icon: <>
-                <use href="#352771695" />
-                </>, description: "Create same style image" },
-    { name: "2", name2: "2", kind: "image", height: "2400", imgSrc: "/assets/cloned/images/87aa66247bfc.png", srcSet: "/assets/cloned/images/11d3025393e7.png 819w, /assets/cloned/images/ed4ff3568a68.png 1638w, /assets/cloned/images/87aa66247bfc.png 1920w", width: "1920", kind2: "icon", icon: <>
-                <use href="#3571851589" />
-                </>, description: "Use Prompt" },
-    { name: "3", name2: "3", kind: "image", height: "2464", imgSrc: "/assets/cloned/images/e478929f98bc.png", srcSet: "/assets/cloned/images/0546315834c2.png 771w, /assets/cloned/images/304493b11e3d.png 1542w, /assets/cloned/images/e478929f98bc.png 1856w", width: "1856", kind2: "icon", icon: <>
-                <use href="#3571851589" />
-                </>, description: "Use Prompt" },
-    { name: "4", name2: "4", kind: "image", height: "2048", imgSrc: "/assets/cloned/images/1ac1618a1012.png", srcSet: "/assets/cloned/images/553e65288194.png 512w, /assets/cloned/images/cad3a5194ac4.png 1024w, /assets/cloned/images/1ac1618a1012.png 2048w", width: "2048", icon: <>
-                <use href="#19207876" />
-                </>, description: "Create Video" },
-    { name: "5", name2: "5", height: "840", imgSrc: "/assets/cloned/images/d2f2b9b1fd65.png", srcSet: "/assets/cloned/images/8682a38d07de.png 512w, /assets/cloned/images/d343f8182aca.png 1024w, /assets/cloned/images/d2f2b9b1fd65.png 1200w", width: "1200", icon: <>
-                <use href="#19207876" />
-                </>, description: "Create Video" },
-    { name: "1", name2: "1", height: "2912", imgSrc: "/assets/cloned/images/92d2694bf867.png", srcSet: "/assets/cloned/images/40bd15d6955e.png 573w, /assets/cloned/images/53660d8ddfcf.png 1147w, /assets/cloned/images/92d2694bf867.png 1632w", width: "1632", icon: <>
-                <use href="#352771695" />
-                </>, description: "Create same style image" },
-    { name: "2", name2: "2", height: "2400", imgSrc: "/assets/cloned/images/87aa66247bfc.png", srcSet: "/assets/cloned/images/11d3025393e7.png 819w, /assets/cloned/images/ed4ff3568a68.png 1638w, /assets/cloned/images/87aa66247bfc.png 1920w", width: "1920", icon: <>
-                <use href="#3571851589" />
-                </>, description: "Use Prompt" },
-    { name: "3", name2: "3", height: "2464", imgSrc: "/assets/cloned/images/e478929f98bc.png", srcSet: "/assets/cloned/images/0546315834c2.png 771w, /assets/cloned/images/304493b11e3d.png 1542w, /assets/cloned/images/e478929f98bc.png 1856w", width: "1856", icon: <>
-                <use href="#3571851589" />
-                </>, description: "Use Prompt" },
-    { name: "4", name2: "4", height: "2048", imgSrc: "/assets/cloned/images/1ac1618a1012.png", srcSet: "/assets/cloned/images/553e65288194.png 512w, /assets/cloned/images/cad3a5194ac4.png 1024w, /assets/cloned/images/1ac1618a1012.png 2048w", width: "2048", icon: <>
-                <use href="#19207876" />
-                </>, description: "Create Video" },
-    { name: "5", name2: "5", height: "840", imgSrc: "/assets/cloned/images/d2f2b9b1fd65.png", srcSet: "/assets/cloned/images/8682a38d07de.png 512w, /assets/cloned/images/d343f8182aca.png 1024w, /assets/cloned/images/d2f2b9b1fd65.png 1200w", width: "1200", icon: <>
-                <use href="#19207876" />
-                </>, description: "Create Video" },
-    { name: "1", name2: "1", height: "2912", imgSrc: "/assets/cloned/images/92d2694bf867.png", srcSet: "/assets/cloned/images/40bd15d6955e.png 573w, /assets/cloned/images/53660d8ddfcf.png 1147w, /assets/cloned/images/92d2694bf867.png 1632w", width: "1632", icon: <>
-                <use href="#352771695" />
-                </>, description: "Create same style image" },
-    { name: "2", name2: "2", height: "2400", imgSrc: "/assets/cloned/images/87aa66247bfc.png", srcSet: "/assets/cloned/images/11d3025393e7.png 819w, /assets/cloned/images/ed4ff3568a68.png 1638w, /assets/cloned/images/87aa66247bfc.png 1920w", width: "1920", icon: <>
-                <use href="#3571851589" />
-                </>, description: "Use Prompt" },
-    { name: "3", name2: "3", height: "2464", imgSrc: "/assets/cloned/images/e478929f98bc.png", srcSet: "/assets/cloned/images/0546315834c2.png 771w, /assets/cloned/images/304493b11e3d.png 1542w, /assets/cloned/images/e478929f98bc.png 1856w", width: "1856", icon: <>
-                <use href="#3571851589" />
-                </>, description: "Use Prompt" },
-    { name: "4", name2: "4", height: "2048", imgSrc: "/assets/cloned/images/1ac1618a1012.png", srcSet: "/assets/cloned/images/553e65288194.png 512w, /assets/cloned/images/cad3a5194ac4.png 1024w, /assets/cloned/images/1ac1618a1012.png 2048w", width: "2048", icon: <>
-                <use href="#19207876" />
-                </>, description: "Create Video" },
-    { name: "5", name2: "5", height: "840", imgSrc: "/assets/cloned/images/d2f2b9b1fd65.png", srcSet: "/assets/cloned/images/8682a38d07de.png 512w, /assets/cloned/images/d343f8182aca.png 1024w, /assets/cloned/images/d2f2b9b1fd65.png 1200w", width: "1200", icon: <>
-                <use href="#19207876" />
-                </>, description: "Create Video" },
-    { name: "1", name2: "1", height: "2912", imgSrc: "/assets/cloned/images/92d2694bf867.png", srcSet: "/assets/cloned/images/40bd15d6955e.png 573w, /assets/cloned/images/53660d8ddfcf.png 1147w, /assets/cloned/images/92d2694bf867.png 1632w", width: "1632", icon: <>
-                <use href="#352771695" />
-                </>, description: "Create same style image" },
-    { name: "2", name2: "2", height: "2400", imgSrc: "/assets/cloned/images/87aa66247bfc.png", srcSet: "/assets/cloned/images/11d3025393e7.png 819w, /assets/cloned/images/ed4ff3568a68.png 1638w, /assets/cloned/images/87aa66247bfc.png 1920w", width: "1920", icon: <>
-                <use href="#3571851589" />
-                </>, description: "Use Prompt" },
-    { name: "3", name2: "3", height: "2464", imgSrc: "/assets/cloned/images/e478929f98bc.png", srcSet: "/assets/cloned/images/0546315834c2.png 771w, /assets/cloned/images/304493b11e3d.png 1542w, /assets/cloned/images/e478929f98bc.png 1856w", width: "1856", icon: <>
-                <use href="#3571851589" />
-                </>, description: "Use Prompt" },
-    { name: "4", name2: "4", height: "2048", imgSrc: "/assets/cloned/images/1ac1618a1012.png", srcSet: "/assets/cloned/images/553e65288194.png 512w, /assets/cloned/images/cad3a5194ac4.png 1024w, /assets/cloned/images/1ac1618a1012.png 2048w", width: "2048", icon: <>
-                <use href="#19207876" />
-                </>, description: "Create Video" },
-    { name: "5", name2: "5", height: "840", imgSrc: "/assets/cloned/images/d2f2b9b1fd65.png", srcSet: "/assets/cloned/images/8682a38d07de.png 512w, /assets/cloned/images/d343f8182aca.png 1024w, /assets/cloned/images/d2f2b9b1fd65.png 1200w", width: "1200", icon: <>
-                <use href="#19207876" />
-                </>, description: "Create Video" }
+import { Avatar, Style } from "@dicebear/core";
+import definition from "@dicebear/styles/pixel-art.json";
+
+type SkillCardData = { type: "skill"; command: string; description: string; seed: string };
+type AutomationCardData = { type: "automation"; text: string; seed: string };
+type GalleryCardData = SkillCardData | AutomationCardData;
+
+const SKILLS: SkillCardData[] = [
+  { type: "skill", command: "/product-lister", description: "Turns a brief into a ready-to-review product listing, written in your voice.", seed: "product-lister" },
+  { type: "skill", command: "/check-meta-ads", description: "Pulls today's Meta results and tells you what changed and why.", seed: "check-meta-ads" },
+  { type: "skill", command: "/check-google-ads", description: "Spend, clicks, and conversions from Google Ads, in plain words.", seed: "check-google-ads" },
+  { type: "skill", command: "/write-description", description: "Rewrites any product description using your brand rules.", seed: "write-description" },
+  { type: "skill", command: "/seo-refresh", description: "Proposes new titles, meta descriptions, and tags for a product.", seed: "seo-refresh" },
+  { type: "skill", command: "/competitor-scan", description: "Reads a competitor link and reports pricing, angles, and positioning.", seed: "competitor-scan" },
+  { type: "skill", command: "/draft-email", description: "Writes a campaign email from a product or promo brief.", seed: "draft-email" },
+  { type: "skill", command: "/answer-ticket", description: "Drafts a reply to a customer message in your tone.", seed: "answer-ticket" },
+  { type: "skill", command: "/order-lookup", description: "Finds an order and summarizes its status and history.", seed: "order-lookup" },
+  { type: "skill", command: "/inventory-check", description: "Reports what's low, what's out, and what's moving fast.", seed: "inventory-check" },
+  { type: "skill", command: "/price-check", description: "Compares your price on a product against competitors.", seed: "price-check" },
+  { type: "skill", command: "/weekly-recap", description: "Summarizes sales, ads, and support into one readable report.", seed: "weekly-recap" },
+  { type: "skill", command: "/refund-review", description: "Reviews a refund request against your policy and proposes a decision.", seed: "refund-review" },
+  { type: "skill", command: "/ad-copy", description: "Drafts headline and copy variations for a product you pick.", seed: "ad-copy" },
+  { type: "skill", command: "/brand-check", description: "Reviews any text against your brand voice and flags what's off.", seed: "brand-check" }
 ];
-const MediaTile2_data: MediaTile2Data[] = [
-    { name: "8", name2: "8", height: "1456", imgSrc: "/assets/cloned/images/5ec64413b47b.png", srcSet: "/assets/cloned/images/4e6533f53869.png 573w, /assets/cloned/images/5ec64413b47b.png 816w", width: "816", icon: <>
-                <use href="#3571851589" />
-                </>, description: "Use Prompt" },
-    { name: "1", name2: "1", height: "2912", imgSrc: "/assets/cloned/images/92d2694bf867.png", srcSet: "/assets/cloned/images/40bd15d6955e.png 573w, /assets/cloned/images/53660d8ddfcf.png 1147w, /assets/cloned/images/92d2694bf867.png 1632w", width: "1632", kind: "image", icon: <>
-                <use href="#352771695" />
-                </>, description: "Create same style image" },
-    { name: "5", name2: "5", height: "840", imgSrc: "/assets/cloned/images/d2f2b9b1fd65.png", srcSet: "/assets/cloned/images/8682a38d07de.png 512w, /assets/cloned/images/d343f8182aca.png 1024w, /assets/cloned/images/d2f2b9b1fd65.png 1200w", width: "1200", kind: "image", kind2: "icon", icon: <>
-                <use href="#19207876" />
-                </>, description: "Create Video" },
-    { name: "6", name2: "6", height: "2624", imgSrc: "/assets/cloned/images/75312f10ff08.png", srcSet: "/assets/cloned/images/28c7131bd151.png 724w, /assets/cloned/images/bad7bf2734e1.png 1448w, /assets/cloned/images/75312f10ff08.png 1856w", width: "1856", kind: "image", kind2: "icon", icon: <>
-                <use href="#3571851589" />
-                </>, description: "Use Prompt" },
-    { name: "7", name2: "7", height: "676", imgSrc: "/assets/cloned/images/35b02958edbe.png", srcSet: "/assets/cloned/images/1547c52f83c0.png 512w, /assets/cloned/images/35b02958edbe.png 816w", width: "816", kind: "image", kind2: "icon", icon: <>
-                <use href="#352771695" />
-                </>, description: "Create same style image" },
-    { name: "8", name2: "8", height: "1456", imgSrc: "/assets/cloned/images/5ec64413b47b.png", srcSet: "/assets/cloned/images/4e6533f53869.png 573w, /assets/cloned/images/5ec64413b47b.png 816w", width: "816", kind: "image", icon: <>
-                <use href="#3571851589" />
-                </>, description: "Use Prompt" },
-    { name: "1", name2: "1", height: "2912", imgSrc: "/assets/cloned/images/92d2694bf867.png", srcSet: "/assets/cloned/images/40bd15d6955e.png 573w, /assets/cloned/images/53660d8ddfcf.png 1147w, /assets/cloned/images/92d2694bf867.png 1632w", width: "1632", icon: <>
-                <use href="#352771695" />
-                </>, description: "Create same style image" }
+
+const AUTOMATIONS: AutomationCardData[] = [
+  { type: "automation", text: "\"Send me revenue and ROAS every day in #general at 8pm\"", seed: "auto-daily-roas" },
+  { type: "automation", text: "\"Draft replies to new support emails and hold them for my approval\"", seed: "auto-support-drafts" },
+  { type: "automation", text: "\"Every Monday at 9am, put a weekly performance recap in my inbox\"", seed: "auto-monday-recap" },
+  { type: "automation", text: "\"When a product drops below 10 in stock, message me on Slack\"", seed: "auto-low-stock" },
+  { type: "automation", text: "\"Watch my Meta ads and flag any ad spending with no sales\"", seed: "auto-meta-watch" },
+  { type: "automation", text: "\"When a new order over €500 comes in, notify me right away\"", seed: "auto-big-order" },
+  { type: "automation", text: "\"Every Friday, propose three products worth a price change\"", seed: "auto-price-proposals" },
+  { type: "automation", text: "\"Draft a listing for every new product added to my Drive folder\"", seed: "auto-drive-listings" },
+  { type: "automation", text: "\"Alert me when a competitor changes pricing on tracked products\"", seed: "auto-competitor-price" },
+  { type: "automation", text: "\"Summarize yesterday's support tickets every morning at 8am\"", seed: "auto-ticket-summary" },
+  { type: "automation", text: "\"When ROAS falls below 2 for two days, tell me which campaigns\"", seed: "auto-roas-alert" },
+  { type: "automation", text: "\"Every first of the month, prepare a P&L summary for review\"", seed: "auto-monthly-pnl" },
+  { type: "automation", text: "\"Flag reviews under 3 stars and draft a response for approval\"", seed: "auto-review-flags" },
+  { type: "automation", text: "\"Remind me of unfulfilled orders older than 48 hours each morning\"", seed: "auto-unfulfilled" },
+  { type: "automation", text: "\"Every Sunday, draft next week's promo email for me to approve\"", seed: "auto-promo-draft" }
 ];
+
+// Interleave so both types appear throughout each marquee row, never grouped.
+const CARDS: GalleryCardData[] = SKILLS.flatMap((skill, i) => [skill, AUTOMATIONS[i]]);
+const ROW1 = CARDS.slice(0, 15);
+const ROW2 = CARDS.slice(15);
+
+const pixelArt = new Style(definition as ConstructorParameters<typeof Style>[0]);
+
+function avatarUri(seed: string): string {
+  const svg = new Avatar(pixelArt, { seed }).toString();
+  return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+}
+
+function GalleryCard({ d, hidden }: { d: GalleryCardData; hidden?: boolean }) {
+  return (
+    <li className={`w-90 list-item relative shrink-0${hidden ? " max-lg:hidden" : ""}`} aria-hidden="false">
+      <div className="h-35 flex relative p-4 rounded-xl flex-col gap-2.5 border border-black/10 bg-white transition-[transform,box-shadow] duration-200 hover:-translate-y-1 hover:shadow-[0px_12px_32px_rgba(0,0,0,0.08)] motion-reduce:transition-none motion-reduce:hover:translate-y-0 motion-reduce:hover:shadow-none">
+        <div className="w-full flex relative justify-between items-center shrink-0">
+          <img className="w-10 h-10 block relative shrink-0 rounded-lg [image-rendering:pixelated]" src={avatarUri(d.seed)} alt="" width="40" height="40" />
+          <p className="block text-muted-foreground [font-family:var(--font-inter-tight),sans-serif] text-[0.6875rem] font-medium leading-4 tracking-[1.2px] uppercase" dir="auto">
+            {d.type === "skill" ? "SKILL" : "AUTOMATION"}
+          </p>
+        </div>
+        {d.type === "skill" ? (
+          <div className="flex relative flex-col gap-1">
+            <p className="block text-foreground [font-family:ui-monospace,_SFMono-Regular,_Menlo,_monospace] text-sm font-medium leading-5" dir="auto">
+              {d.command}
+            </p>
+            <p className="block text-muted-foreground [font-family:var(--font-inter-tight),sans-serif] text-[0.8125rem] font-normal leading-[1.125rem] line-clamp-2" dir="auto">
+              {d.description}
+            </p>
+          </div>
+        ) : (
+          <p className="block text-foreground [font-family:var(--font-inter-tight),sans-serif] text-sm font-normal leading-5" dir="auto">
+            {d.text}
+          </p>
+        )}
+      </div>
+    </li>
+  );
+}
+
 /** Card Grid section. */
-export default function CardGridSection({ mediaTileData = MediaTile_data, mediaTile2Data = MediaTile2_data } = {}) {
+export default function CardGridSection() {
   return (
     <div className="w-full block relative shrink-0 max-lg:z-1">
       <div className="flex relative p-0.5 rounded-[10px] flex-col justify-center items-center content-center gap-2.5 overflow-clip max-lg:[flex-direction:initial]">
-        <div className="w-229 h-52.5 block relative shrink-0 max-md:w-[20.6875rem] max-lg:h-[65.3125rem] max-lg:flex-1 md:max-lg:w-139 2xl:w-289">
-          <section className="h-full flex max-w-full max-h-full p-10 items-center justify-items-center overflow-hidden max-lg:p-0" data-ditto-id="style-section">
+        <div className="w-229 h-41 block relative shrink-0 max-md:w-[20.6875rem] max-lg:h-auto max-lg:flex-1 md:max-lg:w-139 2xl:w-289">
+          <section className="h-full flex max-w-full max-h-full py-3 px-10 items-center justify-items-center overflow-hidden max-lg:p-0" data-ditto-id="style-section">
             <ul className="w-full h-full flex relative max-w-full max-h-full items-center gap-5 justify-items-center [list-style-type:none] list-outside transform-[matrix(1,0,0,1,-3.00054,0)] max-lg:flex-col max-lg:gap-2.5 max-md:transform-[matrix(1,0,0,1,0,-9.0009)] md:max-lg:transform-[matrix(1,0,0,1,0,-38.0005)] 2xl:transform-[matrix(1,0,0,1,-1.99638,0)]" data-ditto-id="motion-ul">
-              {/* Track content tripled so the 2380px-period marquee loop never runs dry.
+              {/* Track content tripled so the marquee loop never runs dry.
                   Duplicates are hidden below lg, where the track renders as a static column. */}
-              {[...mediaTileData, ...mediaTileData, ...mediaTileData].map((d, i) => {
-                const base = MediaTile_styles[i % mediaTileData.length];
-                const styles = i < mediaTileData.length ? base : { ...base, className: `${base.className} max-lg:hidden` };
-                return <MediaTile key={i} d={d} styles={styles} />;
-              })}
+              {[...ROW1, ...ROW1, ...ROW1].map((d, i) => <GalleryCard key={i} d={d} hidden={i >= ROW1.length} />)}
             </ul>
           </section>
         </div>
-        <div className="w-229 h-52.5 block relative shrink-0 max-lg:hidden 2xl:w-289">
-          <section className="flex max-w-full max-h-full p-10 items-center justify-items-center overflow-hidden max-lg:hidden" style={{ maskImage: "linear-gradient(to right, var(--clr-11) 0%, var(--foreground) 12.5%, var(--foreground) 87.5%, var(--clr-11) 100%)" }}>
-            <ul className="h-32.5 flex relative right-850 -left-850 max-w-full max-h-full items-center gap-5 justify-items-center [list-style-type:none] list-outside transform-[matrix(1,0,0,1,4.66836,0)] max-lg:hidden 2xl:transform-[matrix(1,0,0,1,1.33092,0)]" data-ditto-id="motion-ul-2">
-              {/* Track content tripled so the 2380px-period marquee loop never runs dry. */}
-              {[...mediaTile2Data, ...mediaTile2Data, ...mediaTile2Data].map((d, i) => <MediaTile2 key={i} d={d} styles={MediaTile2_styles[i % mediaTile2Data.length]} />)}
+        <div className="w-229 h-41 block relative shrink-0 max-lg:hidden 2xl:w-289">
+          <section className="flex max-w-full max-h-full py-3 px-10 items-center justify-items-center overflow-hidden max-lg:hidden" style={{ maskImage: "linear-gradient(to right, var(--clr-11) 0%, var(--foreground) 12.5%, var(--foreground) 87.5%, var(--clr-11) 100%)" }}>
+            <ul className="h-35 flex relative right-850 -left-850 max-w-full max-h-full items-center gap-5 justify-items-center [list-style-type:none] list-outside transform-[matrix(1,0,0,1,4.66836,0)] max-lg:hidden 2xl:transform-[matrix(1,0,0,1,1.33092,0)]" data-ditto-id="motion-ul-2">
+              {/* Track content tripled so the marquee loop never runs dry. */}
+              {[...ROW2, ...ROW2, ...ROW2].map((d, i) => <GalleryCard key={i} d={d} />)}
             </ul>
           </section>
         </div>

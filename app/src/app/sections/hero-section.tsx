@@ -3,8 +3,8 @@ import Icon6 from "../svgs/svg-icon6";
 import Icon7 from "../svgs/svg-icon7";
 import Logo2 from "../components/logo2";
 import Logo3 from "../components/logo3";
-import { Logo2_meta, Logo3_meta } from "../ditto-meta";
-import { Logo2_styles, Logo3_styles } from "../_styles";
+import { Logo2_meta } from "../ditto-meta";
+import { Logo2_styles } from "../_styles";
 import { logo2Data as logo2DataContent, logos as logosContent } from "../content";
 /** Hero section — the page's lead block. */
 export default function HeroSection({ logo2Data = logo2DataContent, logos = logosContent } = {}) {
@@ -71,7 +71,7 @@ export default function HeroSection({ logo2Data = logo2DataContent, logos = logo
         <div className="w-224 h-[6.9625rem] flex relative pb-2 px-2 flex-col justify-center items-center content-center shrink-0 gap-5 max-md:w-[19.4375rem] max-md:h-[5.4375rem] md:max-lg:w-134 md:max-lg:h-[6.925rem] 2xl:w-[26.05rem] 2xl:h-[7.825rem]">
           <div className="w-220 h-full flex relative flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-2 overflow-hidden max-md:w-[18.4375rem] md:max-lg:w-130 2xl:w-[25.05rem]">
             <div className="w-full h-full flex relative z-2 justify-center items-center content-center grow shrink-0 basis-0 gap-2.5 overflow-hidden">
-              {logos.map((d, i) => <Logo3 key={i} d={d} meta={Logo3_meta[i]} styles={Logo3_styles[i]} />)}
+              {logos.map((d) => <Logo3 key={d.integration} d={d} />)}
             </div>
           </div>
         </div>

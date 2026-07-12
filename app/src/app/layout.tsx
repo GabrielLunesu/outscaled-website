@@ -36,17 +36,17 @@ export const metadata = {
   "icons": {
     "icon": [
       {
-        "url": "/assets/cloned/images/67f2a1b4c28b.png",
+        "url": "https://placehold.co/64x64",
         "media": "(prefers-color-scheme: light)"
       },
       {
-        "url": "/assets/cloned/images/67f2a1b4c28b.png",
+        "url": "https://placehold.co/64x64",
         "media": "(prefers-color-scheme: dark)"
       }
     ],
     "apple": [
       {
-        "url": "/assets/cloned/images/1af1931c5cdc.png"
+        "url": "https://placehold.co/64x64"
       }
     ]
   }

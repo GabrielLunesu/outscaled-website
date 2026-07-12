@@ -13,7 +13,7 @@ export default function FeatureGridSection({ featureCardData = featureCardDataCo
         </div>
         <ul className="w-full flex relative p-2 justify-center items-center content-center shrink-0 gap-2 [list-style-type:none] list-outside max-lg:gap-[0.5625rem] grid-cols-1 lg:grid-cols-3">
           <li className="w-[22%] flex relative p-3 flex-col justify-center items-start content-start shrink-0 gap-3 max-md:w-[56.5%] md:max-lg:w-1/3 2xl:w-[17.5%]">
-            <div className="w-full h-12 block relative shrink-0 overflow-clip max-lg:hidden" />
+            <div className="w-full h-14 block relative shrink-0 overflow-clip max-lg:hidden" />
             {logos.map((d, i) => <Logo7 key={i} d={d} styles={Logo7_styles[i]} />)}
           </li>
           {features.map((d) => <FeatureGridItem key={d.variant} d={d} />)}
