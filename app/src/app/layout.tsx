@@ -10,15 +10,15 @@ import SvgSprite from "./svgs/sprite";
 
 export const metadata = {
   "metadataBase": new URL(SITE_ORIGIN || "http://localhost:3000"),
-  "title": "Erie - AI Creative Platform Template",
-  "description": "Erie is a premium Framer template built for AI SaaS platforms, creative tools, and generative AI startups. Showcase your product with cinematic visuals, bold typography, and a high-converting layout that turns visitors into users.",
+  "title": "Outscaled - AI Employees for Ecommerce",
+  "description": "Outscaled is the first AI employee platform that actually works. Hire AI agents for customer support, social media, and more. No-code setup, real results.",
   "robots": "max-image-preview:large",
   "alternates": {
     "canonical": "/"
   },
   "openGraph": {
-    "title": "Erie - AI Creative Platform Template",
-    "description": "Erie is a premium Framer template built for AI SaaS platforms, creative tools, and generative AI startups. Showcase your product with cinematic visuals, bold typography, and a high-converting layout that turns visitors into users.",
+    "title": "Outscaled - AI Employees for Ecommerce",
+    "description": "Outscaled is the first AI employee platform that actually works. Hire AI agents for customer support, social media, and more. No-code setup, real results.",
     "type": "website",
     "url": "/",
     "images": [
@@ -27,8 +27,8 @@ export const metadata = {
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Erie - AI Creative Platform Template",
-    "description": "Erie is a premium Framer template built for AI SaaS platforms, creative tools, and generative AI startups. Showcase your product with cinematic visuals, bold typography, and a high-converting layout that turns visitors into users.",
+    "title": "Outscaled - AI Employees for Ecommerce",
+    "description": "Outscaled is the first AI employee platform that actually works. Hire AI agents for customer support, social media, and more. No-code setup, real results.",
     "images": [
       "https://framerusercontent.com/images/eocjpipeCV8HsjiQ9mupZkj77c.png"
     ]
